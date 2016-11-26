@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Template</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/basic.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<header id="header">
+		<div class="content header">
+			<div class="logo">
+				<a href="index.html"> 
+					<img src="images/logo.png"/>
+				</a>
+			</div>
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html"  class="active">首页</a></li>
+					<li class="navdown">
+						<a href="gentuan.html">目的地跟团</a><span class="caret"></span>
+						<div class="navdown_list">
+							<a href="" target="_blank">新疆</a>
+							<a href="" target="_blank">西藏</a>
+							<a href="" target="_blank">甘肃</a>
+							<a href="" target="_blank">青海</a>
+							<a href="" target="_blank">宁夏</a>
+						</div>
+					</li>
+					<li><a href="ziyou.html">自由行</a></li>
+					<li><a href="sheying.html">摄影游</a></li>
+					<li><a href="dingjia.html">自主定价</a></li>
+					<li><a href="bijia.html">同类产品比价</a></li>
+					<li><a href="dingzhi.html">私人定制</a></li>
+					<li><a href="guanjia.html">私人管家</a></li>
+					<li><a href="tonghang.html">同行人口</a></li>
+					<li><a href="ditu.html">旅游地图</a></li>
+					<li><a href="zhifu.html">在线支付</a></li>
+					<li><a href="huwai.html">户外军团</a></li>
+					<li><a href="zijia.html">自驾游</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div id="slide">
+		<div class="index_slide">
+			<div class="bd">
+				<ul>
+					<li><a href="javascript:;" target="_blank"><img src="images/banner1.jpg" /></a></li>
+					<li><a href="javascript:;" target="_blank"><img src="images/banner1.jpg" /></a></li>
+					<li><a href="javascript:;" target="_blank"><img src="images/banner1.jpg" /></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="slide_center">
+			<div class="slide_centerOne">
+				<div class="search">
+					<div class="search_a">
+						<a href="#" target="_blank">喀纳斯</a>
+						<a href="#" target="_blank">禾木</a>
+						<a href="#" target="_blank">吐鲁番</a>
+						<a href="#" target="_blank">天池</a>
+					</div>
+					<div class="input-group">
+				      <input type="text" class="form-control" placeholder="输入景点、标题" >
+				      <span class="input-group-btn">
+				        <button class="btn btn-default" type="button">搜 索</button>
+				      </span>
+				    </div>
+				</div>
+				<div class="reglogin">
+					<button type="button" class="btn btn-info" id="login">登录</button>
+					<button type="button" class="btn btn-warning" id="register">注册</button>
+					<div class="reglogin_con" id="reglogin_con">
+						<div class="register">
+							<form action="" method="post">
+								<div class="form-group">
+							    <div class="input-group">
+							      <div class="input-group-addon">手机号：</div>
+							      <input class="form-control" type="tel" placeholder="输入您的手机号来注册">
+							    </div>
+							    <div class="input-group">
+							      <div class="input-group-addon">密&nbsp;&nbsp;&nbsp;码：</div>
+							      <input class="form-control" type="password" placeholder="输入您的密码">
+							    </div>
+							    <div class="input-group">
+							      <div class="input-group-addon">验证码：</div>
+							      <input class="form-control" type="text" placeholder="短信验证码">
+							    </div>
+							    <div>
+							    	<button type="button" class="btn btn-default">点击获取短信验证码</button>
+							    	<button type="button" class="btn btn-warning">注册</button>
+							    </div>
+							  </div>
+							</form>
+							<a href="javascript:;" class="glyphicon glyphicon-remove" id="reg_close"></a>
+						</div>
+						<div class="login">
+							<form action="" method="post">
+								<div class="form-group">
+							    <div class="input-group">
+							      <div class="input-group-addon">手机号：</div>
+							      <input class="form-control" type="tel" placeholder="输入您的手机号来注册">
+							    </div>
+							    <div class="input-group">
+							      <div class="input-group-addon">密&nbsp;&nbsp;&nbsp;码：</div>
+							      <input class="form-control" type="password" placeholder="输入您的密码">
+							    </div>
+							    <div class="reglogin_sub">
+							    	<button type="button" class="btn btn-info">登录</button>
+							    </div>
+							  </div>
+							</form>
+							<a href="javascript:;" class="glyphicon glyphicon-remove" id="lo_close"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide_centerTwo">
+				<ul class="row">
+					<li class="col-md-6 text-center">
+						<a href="#" class="btn btn-default btn-block">新疆</a>
+					</li>
+					<li class="col-md-6 text-center">
+						<a href="#" class="btn btn-default btn-block">西藏</a>
+					</li>
+					<li class="col-md-4 text-center">
+						<a href="#" class="btn btn-default btn-block">青海</a>
+					</li>
+					<li class="col-md-4 text-center">
+						<a href="#" class="btn btn-default btn-block">甘肃</a>
+					</li>
+					<li class="col-md-4 text-center">
+						<a href="#" class="btn btn-default btn-block">宁夏</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="index_boxOne">
+		<div class="content zhuti">
+				<div class="index_title">
+					<h2>主题精选</h2>
+					<i class="line"></i>
+				</div>
+				<div class="zhuti_box">
+					<ul class="row">
+						<li class="col-md-6">
+							<a href="#" target="_blank" class="scale">
+								<img src="images/img1.jpg"/>
+							</a>
+						</li>
+						<li class="col-md-6">
+							<a href="#" target="_blank" class="scale">
+								<img src="images/img2.jpg"/>
+							</a>
+						</li>
+						<li class="col-md-4">
+							<a href="#" target="_blank" class="scale">
+								<img src="images/img3.jpg"/>
+							</a>
+						</li>
+						<li class="col-md-4">
+							<a href="#" target="_blank" class="scale">
+								<img src="images/img4.jpg"/>
+							</a>
+						</li>
+						<li class="col-md-4">
+							<a href="#" target="_blank" class="scale">
+								<img src="images/img5.jpg"/>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="zhuti_box">
+					<div class="zhuti_boxk">
+						<h2>成都</h2>
+						<div class="zhuti_boxk_img scale">
+							<img src="images/banner1.jpg"/>
+							<i></i>
+							<i></i>
+						</div>
+						<div class="zhuti_boxk_text">
+							一座来了就不想走的城市，一个让时间慢下来的“休闲之都”。
+							巴蜀文化发源之地，邂逅古色古香的城市，感受闲适安逸的慢生活。推荐温泉胜地：花水湾温泉度假区、青城山豪生温泉、五行仙谷。
+						</div>
+						<em></em>
+						<em></em>
+					</div>
+					<ul class="row">
+						<li class="col-md-4">
+							<a href="#" target="_blank" class="scale">
+								<img src="images/img3.jpg"/>
+							</a>
+						</li>
+						<li class="col-md-4">
+							<a href="#" target="_blank" class="scale">
+								<img src="images/img4.jpg"/>
+							</a>
+						</li>
+						<li class="col-md-4">
+							<a href="#" target="_blank" class="scale">
+								<img src="images/img5.jpg"/>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="zhuti_box">
+					<div class="zhuti_boxk zhuti_boxk1">
+						<h2>成都</h2>
+						<div class="zhuti_boxk_text">
+							一座来了就不想走的城市，一个让时间慢下来的“休闲之都”。
+							巴蜀文化发源之地，邂逅古色古香的城市，感受闲适安逸的慢生活。推荐温泉胜地：花水湾温泉度假区、青城山豪生温泉、五行仙谷。
+						</div>
+						<div class="zhuti_boxk_img scale">
+							<img src="images/banner1.jpg"/>
+							<i></i>
+							<i></i>
+						</div>
+						<em></em>
+						<em></em>
+					</div>
+					<ul class="row">
+						<li class="col-md-4">
+							<a href="#" target="_blank" class="scale">
+								<img src="images/img3.jpg"/>
+							</a>
+						</li>
+						<li class="col-md-4">
+							<a href="#" target="_blank" class="scale">
+								<img src="images/img4.jpg"/>
+							</a>
+						</li>
+						<li class="col-md-4">
+							<a href="#" target="_blank" class="scale">
+								<img src="images/img5.jpg"/>
+							</a>
+						</li>
+					</ul>
+				</div>
+		</div>
+	</div>
+	
+	<div class="index_boxTwo">
+		
+		<div class="content ziyou">
+				<div class="index_title1">
+					<h2><em>经典旅游</em>-经典线路</h2>
+					<span>真实行程一价全包，专属旅行顾问全程保障</span>
+				</div>
+				<div class="ziyou_con">
+					<ul class="row">
+						<li class="col-md-6">
+							<a href="#" target="_blank">
+								<div class="ziyou_img scale">
+									<img src="images/img3.jpg"/>
+									<span>亲子游</span>
+								</div>
+								<div class="ziyou_text">
+									<h3>在新疆上一起享受七色琉璃时光在新疆上一起享受七色琉璃时光</h3>
+									<p>新疆-喀纳斯-吐鲁番</p>
+									<div>
+										<p class="service"><span>接机参团</span><span>配房服务</span></p>
+										<p class="price">
+											31233<span>/人</span>
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="col-md-6">
+							<a href="#" target="_blank">
+								<div class="ziyou_img scale">
+									<img src="images/img5.jpg"/>
+									<span>亲子游</span>
+								</div>
+								<div class="ziyou_text">
+									<h3>在新疆上一起享受七色琉璃时光在新疆上一起享受七色琉璃时光</h3>
+									<p>新疆-喀纳斯-吐鲁番</p>
+									<div>
+										<p class="service"><span>接机参团</span><span>配房服务</span></p>
+										<p class="price">
+											31233<span>/人</span>
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="col-md-6">
+							<a href="#" target="_blank">
+								<div class="ziyou_img scale">
+									<img src="images/img4.jpg"/>
+									<span>亲子游</span>
+								</div>
+								<div class="ziyou_text">
+									<h3>在新疆上一起享受七色琉璃时光在新疆上一起享受七色琉璃时光</h3>
+									<p>新疆-喀纳斯-吐鲁番</p>
+									<div>
+										<p class="service"><span>接机参团</span><span>配房服务</span></p>
+										<p class="price">
+											31233<span>/人</span>
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="col-md-6">
+							<a href="#" target="_blank">
+								<div class="ziyou_img scale">
+									<img src="images/img1.jpg"/>
+									<span>亲子游</span>
+								</div>
+								<div class="ziyou_text">
+									<h3>在新疆上一起享受七色琉璃时光在新疆上一起享受七色琉璃时光</h3>
+									<p>新疆-喀纳斯-吐鲁番</p>
+									<div>
+										<p class="service"><span>接机参团</span><span>配房服务</span></p>
+										<p class="price">
+											31233<span>/人</span>
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="col-md-6">
+							<a href="#" target="_blank">
+								<div class="ziyou_img scale">
+									<img src="images/img2.jpg"/>
+									<span>亲子游</span>
+								</div>
+								<div class="ziyou_text">
+									<h3>在新疆上一起享受七色琉璃时光在新疆上一起享受七色琉璃时光</h3>
+									<p>新疆-喀纳斯-吐鲁番</p>
+									<div>
+										<p class="service"><span>接机参团</span><span>配房服务</span></p>
+										<p class="price">
+											31233<span>/人</span>
+										</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="col-md-6">
+							<a href="#" target="_blank">
+								<h4>更多经典线路&gt;</h4>
+								<p>精选客户满意度最高的500条路线，行程细致省钱省时</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="ziyou_jd">
+					<div class="ziyou_jd_title">
+						按景点分类经典自由行
+					</div>
+					<div class="ziyou_jd_con">
+						<ul class="row">
+							<li class="col-md-1">
+								<a href="#" target="_blank" class="scale">
+									<h3>喀纳斯</h3>
+									<img src="images/img3.jpg"/>
+								</a>
+							</li>
+							<li class="col-md-1">
+								<a href="#" target="_blank" class="scale">
+									<h3>喀纳斯</h3>
+									<img src="images/img3.jpg"/>
+								</a>
+							</li>
+							<li class="col-md-1">
+								<a href="#" target="_blank" class="scale">
+									<h3>喀纳斯</h3>
+									<img src="images/img3.jpg"/>
+								</a>
+							</li>
+							<li class="col-md-1">
+								<a href="#" target="_blank" class="scale">
+									<h3>喀纳斯</h3>
+									<img src="images/img3.jpg"/>
+								</a>
+							</li>
+							<li class="col-md-1">
+								<a href="#" target="_blank" class="scale">
+									<h3>喀纳斯</h3>
+									<img src="images/img3.jpg"/>
+								</a>
+							</li>
+							<li class="col-md-1">
+								<a href="#" target="_blank" class="scale">
+									<h3>喀纳斯</h3>
+									<img src="images/img3.jpg"/>
+								</a>
+							</li>
+							<li class="col-md-1">
+								<a href="#" target="_blank" class="scale">
+									<h3>喀纳斯</h3>
+									<img src="images/img3.jpg"/>
+								</a>
+							</li>
+							<li class="col-md-1">
+								<a href="#" target="_blank" class="scale">
+									<h3>喀纳斯</h3>
+									<img src="images/img3.jpg"/>
+								</a>
+							</li>
+							<li class="col-md-1">
+								<a href="#" target="_blank" class="scale">
+									<h3>喀纳斯</h3>
+									<img src="images/img3.jpg"/>
+								</a>
+							</li>
+							<li class="col-md-1">
+								<a href="#" target="_blank" class="scale">
+									<h3>喀纳斯</h3>
+									<img src="images/img3.jpg"/>
+								</a>
+							</li>
+							<li class="col-md-1">
+								<a href="#" target="_blank" class="scale">
+									<h3>喀纳斯</h3>
+									<img src="images/img3.jpg"/>
+								</a>
+							</li>
+							<li class="col-md-1">
+								<a href="#" target="_blank">
+									更多
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+		</div>
+
+	</div>
+	
+	<div class="index_boxOne">
+		<div class="content">
+				<div class="index_title1">
+					<h2><em>定制旅行</em>-最个性</h2>
+					<span>专属定制师贴心设计，私人定制旅游独一无二</span>
+				</div>
+				<div class="slideBox_dz">
+					<div class="bd">
+						<ul>
+							<li><a href="javascript:;" target="_blank"><img src="images/dz1.jpg" /></a></li>
+							<li><a href="javascript:;" target="_blank"><img src="images/dz2.jpg" /></a></li>
+							<li><a href="javascript:;" target="_blank"><img src="images/dz3.jpg" /></a></li>
+							<li><a href="javascript:;" target="_blank"><img src="images/dz4.jpg" /></a></li>
+							<li><a href="javascript:;" target="_blank"><img src="images/dz5.jpg" /></a></li>
+							<li><a href="javascript:;" target="_blank"><img src="images/dz6.jpg" /></a></li>
+						</ul>
+					</div>
+					<div class="hd">
+						<ul class="row">
+							<li class="col-md-2"><a href="#" target="_blank"><h3>让旅行更省心</h3><span>帮你搞定所有麻烦事</span></a></li>
+							<li class="col-md-2"><a href="#" target="_blank"><h3>让旅行更精彩</h3><span>所有旅行的体验都是你想要的</span></a></li>
+							<li class="col-md-2"><a href="#" target="_blank"><h3>定制流程</h3><span>一次定制旅行是这样的</span></a></li>
+							<li class="col-md-2"><a href="#" target="_blank"><h3>让旅行更省心</h3><span>帮你搞定所有麻烦事</span></a></li>
+							<li class="col-md-2"><a href="#" target="_blank"><h3>让旅行更精彩</h3><span>所有旅行的体验都是你想要的</span></a></li>
+							<li class="col-md-2"><a href="#" target="_blank"><h3>定制流程</h3><span>一次定制旅行是这样的</span></a></li>
+						</ul>
+					</div>
+					<div class="slideBox_a">
+						<a class="prev" href="javascript:void(0)">&lt;</a>
+						<a class="next" href="javascript:void(0)">&gt;</a>
+					</div>
+					
+				</div>
+		</div>
+	</div>
+	
+	<div class="index_boxTwo">
+		<div class="content">
+			<div class="index_title1">
+					<h2>他们的旅行</h2>
+					<span>一次美好的旅行，应该有温度</span>
+			</div>
+			<div class="picScroll-left">
+				<div class="slideBox_a">
+					<a class="next">&gt;</a>
+					<a class="prev">&lt;</a>
+				</div>
+				<div class="bd">
+					<ul class="picList">
+						<li>
+							<div class="pic">
+								<a href="javascript:;" target="_blank" class="scale">
+									<img src="images/img1.jpg" />
+								</a>
+								<div class="info">
+									<p>喀纳斯</p>
+									<p>
+										<span><img src="images/rili.png"/>8天</span>
+										<span><img src="images/renshu.png"/>12人</span>
+									</p>
+								</div>
+							</div>
+							<div class="title">
+								<a href="javascript:;" target="_blank" class="scale">
+									<h3>旅行总花费：28550元/人</h3>
+									<p>“指环王里称这片土地为中土世界，来过的人说它是世界上最后一片净土，当我站在Eden Mountain，从山顶看着奥克兰，我就信了，多谢无二之旅告诉我这个地方，犹如梦中”   By 安小乔</p>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="pic">
+								<a href="javascript:;" target="_blank" class="scale">
+									<img src="images/img2.jpg" />
+								</a>
+								<div class="info">
+									<p>喀纳斯</p>
+									<p>
+										<span><img src="images/rili.png"/>8天</span>
+										<span><img src="images/renshu.png"/>12人</span>
+									</p>
+								</div>
+							</div>
+							<div class="title">
+								<a href="javascript:;" target="_blank" class="scale">
+									<h3>旅行总花费：28550元/人</h3>
+									<p>“指环王里称这片土地为中土世界，来过的人说它是世界上最后一片净土，当我站在Eden Mountain，从山顶看着奥克兰，我就信了，多谢无二之旅告诉我这个地方，犹如梦中”   By 安小乔</p>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="pic">
+								<a href="javascript:;" target="_blank" class="scale">
+									<img src="images/img3.jpg" />
+								</a>
+								<div class="info">
+									<p>喀纳斯</p>
+									<p>
+										<span><img src="images/rili.png"/>8天</span>
+										<span><img src="images/renshu.png"/>12人</span>
+									</p>
+								</div>
+							</div>
+							<div class="title">
+								<a href="javascript:;" target="_blank" class="scale">
+									<h3>旅行总花费：28550元/人</h3>
+									<p>“指环王里称这片土地为中土世界，来过的人说它是世界上最后一片净土，当我站在Eden Mountain，从山顶看着奥克兰，我就信了，多谢无二之旅告诉我这个地方，犹如梦中”   By 安小乔</p>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="pic">
+								<a href="javascript:;" target="_blank" class="scale">
+									<img src="images/img4.jpg" />
+								</a>
+								<div class="info">
+									<p>喀纳斯</p>
+									<p>
+										<span><img src="images/rili.png"/>8天</span>
+										<span><img src="images/renshu.png"/>12人</span>
+									</p>
+								</div>
+							</div>
+							<div class="title">
+								<a href="javascript:;" target="_blank" class="scale">
+									<h3>旅行总花费：28550元/人</h3>
+									<p>“指环王里称这片土地为中土世界，来过的人说它是世界上最后一片净土，当我站在Eden Mountain，从山顶看着奥克兰，我就信了，多谢无二之旅告诉我这个地方，犹如梦中”   By 安小乔</p>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="pic">
+								<a href="javascript:;" target="_blank" class="scale">
+									<img src="images/img5.jpg" />
+								</a>
+								<div class="info">
+									<p>喀纳斯</p>
+									<p>
+										<span><img src="images/rili.png"/>8天</span>
+										<span><img src="images/renshu.png"/>12人</span>
+									</p>
+								</div>
+							</div>
+							<div class="title">
+								<a href="javascript:;" target="_blank" class="scale">
+									<h3>旅行总花费：28550元/人</h3>
+									<p>“指环王里称这片土地为中土世界，来过的人说它是世界上最后一片净土，当我站在Eden Mountain，从山顶看着奥克兰，我就信了，多谢无二之旅告诉我这个地方，犹如梦中”   By 安小乔</p>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="index_boxOne">
+		<div class="content index_ad">
+			<ul class="row">
+				<li class="col-md-6"><a href="#" target="_blank" class="scale"><img src="images/img1.jpg"/></a></li>
+				<li class="col-md-6"><a href="#" target="_blank" class="scale"><img src="images/img2.jpg"/></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="index_dz">
+		<div class="content index_form">
+			<div class="index_form_title">
+				<h2>你只需要决定出发</h2>
+				<p>- 剩下所有的一切，交给无二之旅就好 -</p>
+			</div>
+			<form action="" method="post">
+				<div class="form_con">
+					<input type="text" name="name" id="name" placeholder="姓名"/>
+					<input type="text" name="destination" id="destination" placeholder="目的地"/>
+					<input type="text" name="travel_days" id="travel_days" placeholder="天数"/>
+				</div>
+				<div class="form_con">
+					<input type="tel" name="phone" id="phone" placeholder="手机" autocomplete="off"/>
+				</div>
+				<div class="form_con">
+					<textarea name="comment" id="comment" placeholder="备注内容"></textarea>
+				</div>
+				<div class="form_con">
+					<button type="submit" id="submit" />提交</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<div class="index_boxTwo">
+		<div class="content bottom_link">
+			<a href="about.html">关于我们</a>
+			<a href="about.html">关于我们</a>
+			<a href="about.html">关于我们</a>
+			<a href="about.html">关于我们</a>
+			<a href="about.html">关于我们</a>
+			<a href="about.html">关于我们</a>
+			<a href="about.html">关于我们</a>
+			<a href="about.html">联系我们</a>
+			<a href="about.html">联系我们</a>
+			<a href="about.html">联系我们</a>
+			<a href="about.html">联系我们</a>
+			<a href="about.html">关于我们</a>
+			<a href="about.html">关于我们</a>
+			<a href="about.html">关于我们</a>
+			<a href="about.html">关于我们</a>
+			<a href="about.html">关于我们</a>
+			<a href="about.html">关于我们</a>
+			<a href="about.html">关于我们</a>
+			<a href="about.html">联系我们</a>
+			<a href="about.html">联系我们</a>
+			<a href="about.html">联系我们</a>
+			<a href="about.html">联系我们</a>
+		</div>
+	</div>
+	
+	<footer id="footer">
+		<div class="content">
+			<div class="site_link">
+				<h3>-友情链接-</h3>
+				<div class="site_link_con">
+					<a href="#" target="_blank"><img src="images/link.png"/></a>
+					<a href="#" target="_blank"><img src="images/link.png"/></a>
+					<a href="#" target="_blank"><img src="images/link.png"/></a>
+					<a href="#" target="_blank"><img src="images/link.png"/></a>
+					<a href="#" target="_blank"><img src="images/link.png"/></a>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="logo">
+						<a href="#"><img src="images/logo.png"/></a>
+				</div>
+				<div class="copyright_con">
+					<p>Copyright©2006-2015 www.xinjiangtour.com | All rights reserved 新ICP备13003149号-1<span>联系电话：0991-12345678</span></p>
+					<p>新疆中国国际旅行社有限责任公司<span>地址：中国新疆乌鲁木齐市人民东路33号</span></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+    <script src="lib/jquery/jquery-2.14.min.js"></script>
+		<script src="js/jquery.SuperSlide.2.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/scrollfix.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/basic.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
