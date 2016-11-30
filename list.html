@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Template</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/basic.css" />
+    <link rel="stylesheet" type="text/css" href="css/list.css" />
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header id="header">
+        <div class="content header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" />
+                </a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html" class="active">首页</a></li>
+                    <li class="navdown">
+                        <a href="gentuan.html">目的地跟团</a><span class="caret"></span>
+                        <div class="navdown_list">
+                            <a href="" target="_blank">新疆</a>
+                            <a href="" target="_blank">西藏</a>
+                            <a href="" target="_blank">甘肃</a>
+                            <a href="" target="_blank">青海</a>
+                            <a href="" target="_blank">宁夏</a>
+                        </div>
+                    </li>
+                    <li><a href="ziyou.html">自由行</a></li>
+                    <li><a href="sheying.html">摄影游</a></li>
+                    <li><a href="dingjia.html">自主定价</a></li>
+                    <li><a href="bijia.html">同类产品比价</a></li>
+                    <li><a href="dingzhi.html">私人定制</a></li>
+                    <li><a href="guanjia.html">私人管家</a></li>
+                    <li><a href="tonghang.html">同行人口</a></li>
+                    <li><a href="ditu.html">旅游地图</a></li>
+                    <li><a href="zhifu.html">在线支付</a></li>
+                    <li><a href="huwai.html">户外军团</a></li>
+                    <li><a href="zijia.html">自驾游</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+
+        <div class="section">
+            <div class="section_top">
+                <a href="#">新疆</a>
+                <a href="#">西藏</a>
+                <a href="#">甘肃</a>
+                <a href="#">青海</a>
+                <a href="#">宁夏</a>
+            </div>
+            <div class="section_con">
+                <div class="selected row">
+                    <div class="col-md-2">
+                        <span class="active_span">你已选择</span><button type="button" class="btn btn-info btn-sm showOne">西藏</button>
+                    </div>
+                    <div class="col-md-9 showTwo">
+
+                    </div>
+                    <div class="col-md-1">
+                        <button type="button" id="showClose" class="btn btn-warning btn-sm">清除全部<i class="glyphicon glyphicon-remove"></i></button>
+                    </div>
+                </div>
+                <div class="selected_con">
+                    <div class="selected_con_list row">
+                        <div class="col-md-1 title">
+                            主题活动
+                        </div>
+                        <div class="col-md-11 cont">
+                            <a href="#" class="btn btn-danger btn-sm all">不限</a>
+                            <a href="#">亲子游</a><a href="#">夕阳红</a><a href="#">蜜月</a><a href="#">度假</a><a href="#">摄影</a>
+                            <a href="#">亲子游1</a><a href="#">夕阳红1</a><a href="#">蜜月1</a><a href="#">度假1</a><a href="#">摄影1</a>
+                            <a href="#">亲子游2</a><a href="#">夕阳红2</a><a href="#">蜜月2</a><a href="#">度假2</a><a href="#">摄影2</a>
+                        </div>
+                    </div>
+                    <div class="selected_con_list row">
+                        <div class="col-md-1 title">
+                            出发城市
+                        </div>
+                        <div class="col-md-11 cont">
+                            <a href="#" class="btn btn-danger btn-sm all">不限</a>
+                            <a href="#">布达拉</a><a href="#">布达拉1</a><a href="#">布达拉2</a><a href="#">布达拉3</a><a href="#">布达拉4</a>
+                        </div>
+                    </div>
+                    <div class="selected_con_list row">
+                        <div class="col-md-1 title">
+                            结束城市
+                        </div>
+                        <div class="col-md-11 cont">
+                            <a href="#" class="btn btn-danger btn-sm all">不限</a>
+                            <a href="#">布达拉</a><a href="#">布达拉1</a><a href="#">布达拉2</a><a href="#">布达拉3</a><a href="#">布达拉4</a>
+                        </div>
+                    </div>
+                    <div class="selected_con_list row">
+                        <div class="col-md-1 title">
+                            行程天数
+                        </div>
+                        <div class="col-md-11 cont">
+                            <a href="#" class="btn btn-danger btn-sm all">不限</a>
+                            <a href="#">1天</a><a href="#">2天</a><a href="#">3天</a><a href="#">4天</a><a href="#">5天</a><a href="#">6天</a><a href="#">7天</a>
+                            <a href="#">8天</a><a href="#">9天</a><a href="#">10天</a><a href="#">11天</a><a href="#">12天</a><a href="#">13天</a><a href="#">14天</a>
+                            <a href="#">15天</a><a href="#">15天以上</a>
+                        </div>
+                    </div>
+                    <div class="selected_con_list row">
+                        <div class="col-md-1 title">
+                            途径景点
+                        </div>
+                        <div class="col-md-11 cont">
+                            <div id="jingdian_sx">
+                                <ul>
+                                    <li data-letter="all" class="all active">全部</li>
+                                    <li data-letter="other">#</li>
+                                    <li data-letter="a">A</li>
+                                    <li data-letter="b">B</li>
+                                    <li data-letter="c">C</li>
+                                    <li data-letter="d">D</li>
+                                    <li data-letter="e">E</li>
+                                    <li data-letter="f">F</li>
+                                    <li data-letter="g">G</li>
+                                    <li data-letter="h">H</li>
+                                    <li data-letter="i">I</li>
+                                    <li data-letter="j">J</li>
+                                    <li data-letter="k">K</li>
+                                    <li data-letter="l">L</li>
+                                    <li data-letter="m">M</li>
+                                    <li data-letter="n">N</li>
+                                    <li data-letter="o">O</li>
+                                    <li data-letter="p">P</li>
+                                    <li data-letter="q">Q</li>
+                                    <li data-letter="r">R</li>
+                                    <li data-letter="s">S</li>
+                                    <li data-letter="t">T</li>
+                                    <li data-letter="u">U</li>
+                                    <li data-letter="v">V</li>
+                                    <li data-letter="w">W</li>
+                                    <li data-letter="x">X</li>
+                                    <li data-letter="y">Y</li>
+                                    <li data-letter="z">Z</li>
+                                </ul>
+
+                            </div>
+                            <div id="list_jingdian">
+                                <a href="#" class="btn btn-danger btn-sm all">不限</a>
+                                <a href="#" data-letter="a" data-name="布达拉宫0">布达拉宫<i></i></a>
+                                <a href="#" data-letter="b" data-name="布达拉宫1">布达拉宫1<i></i></a>
+                                <a href="#" data-letter="c" data-name="布达拉宫2">布达拉宫2<i></i></a>
+                                <a href="#" data-letter="d" data-name="布达拉宫3">布达拉宫3<i></i></a>
+                                <a href="#" data-letter="e" data-name="布达拉宫4">布达拉宫4<i></i></a>
+                                <a href="#" data-letter="f" data-name="布达拉宫5">布达拉宫5<i></i></a>
+                                <a href="#" data-letter="g" data-name="布达拉宫6">布达拉宫6<i></i></a>
+                                <a href="#" data-letter="h" data-name="布达拉宫7">布达拉宫7<i></i></a>
+                                <a href="#" data-letter="i" data-name="布达拉宫8">布达拉宫8<i></i></a>
+                                <a href="#" data-letter="k" data-name="布达拉宫9">布达拉宫9<i></i></a>
+                                <a href="#" data-letter="j" data-name="布达拉宫10">布达拉宫<i></i></a>
+                                <a href="#" data-letter="l" data-name="布达拉宫11">布达拉宫1<i></i></a>
+                                <a href="#" data-letter="m" data-name="布达拉宫12">布达拉宫2<i></i></a>
+                                <a href="#" data-letter="n" data-name="布达拉宫13">布达拉宫3<i></i></a>
+                                <a href="#" data-letter="o" data-name="布达拉宫14">布达拉宫4<i></i></a>
+                                <a href="#" data-letter="p" data-name="布达拉宫15">布达拉宫5<i></i></a>
+                                <a href="#" data-letter="q" data-name="布达拉宫16">布达拉宫6<i></i></a>
+                                <a href="#" data-letter="r" data-name="布达拉宫17">布达拉宫7<i></i></a>
+                                <a href="#" data-letter="s" data-name="布达拉宫18">布达拉宫8<i></i></a>
+                                <a href="#" data-letter="t" data-name="布达拉宫19">布达拉宫9<i></i></a>
+                                <a href="#" data-letter="t" data-name="布达拉宫20">布达拉宫<i></i></a>
+                                <a href="#" data-letter="t " data-name="布达拉宫21">布达拉宫1<i></i></a>
+                                <a href="#" data-letter="w" data-name="布达拉宫22">布达拉宫2<i></i></a>
+                                <a href="#" data-letter="x" data-name="布达拉宫23">布达拉宫3<i></i></a>
+                                <a href="#" data-letter="y" data-name="布达拉宫24">布达拉宫4<i></i></a>
+                                <a href="#" data-letter="z" data-name="布达拉宫25">布达拉宫5<i></i></a>
+                                <a href="#" data-letter="a" data-name="布达拉宫26">布达拉宫6<i></i></a>
+                                <a href="#" data-letter="b" data-name="布达拉宫27">布达拉宫7<i></i></a>
+                                <a href="#" data-letter="c" data-name="布达拉宫28">布达拉宫8<i></i></a>
+                                <a href="#" data-letter="d" data-name="布达拉宫29">布达拉宫29<i></i></a>
+                                <a href="#" data-letter="e" data-name="布达拉宫30">布达拉宫<i></i></a>
+                                <a href="#" data-letter="f" data-name="布达拉宫31">布达拉宫1<i></i></a>
+                                <a href="#" data-letter="g" data-name="布达拉宫32">布达拉宫2<i></i></a>
+                                <a href="#" data-letter="h" data-name="布达拉宫33">布达拉宫3<i></i></a>
+                                <a href="#" data-letter="i" data-name="布达拉宫34">布达拉宫4<i></i></a>
+                                <a href="#" data-letter="j" data-name="布达拉宫35">布达拉宫5<i></i></a>
+                                <a href="#" data-letter="k" data-name="布达拉宫36">布达拉宫6<i></i></a>
+                                <a href="#" data-letter="l" data-name="布达拉宫37">布达拉宫7<i></i></a>
+                                <a href="#" data-letter="m" data-name="布达拉宫38">布达拉宫8<i></i></a>
+                                <a href="#" data-letter="n" data-name="布达拉宫39">布达拉宫39<i></i></a>
+                                <a href="javascript:;" class="btn btn-default btn-xs" id="jd_more">全部景点...</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="selected_con_list row">
+                        <div class="col-md-1 title">
+                            选择服务
+                        </div>
+                        <div class="col-md-11 cont">
+                            <a href="#" class="btn btn-danger btn-sm all">不限</a>
+                            <a href="#">接机参团</a><a href="#">配房服务</a><a href="#">加订酒店</a><a href="#">结束送机</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="list_con">
+            <div class="list_con_left">
+                <div class="list_con_left_top">
+                    <ul>
+                        <li>
+                            <a href="#">推荐<i class="glyphicon glyphicon-arrow-down"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">天数<i class="glyphicon glyphicon-arrow-up"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">价格<i class="glyphicon glyphicon-arrow-down"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">出发城市<i class="glyphicon glyphicon-arrow-down"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">离团城市<i class="glyphicon glyphicon-arrow-down"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                            <span>1/4</span>
+                            <a href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list_con_left_cen">
+                    <ul>
+                        <li>
+                            <div class="list_cen_top">
+                                <div class="list_cen_img scale">
+                                    <a href="#" target="_blank">
+                                        <img src="images/img3.jpg" />
+                                    </a>
+                                    <p>产品编号：NYSD-45</p>
+                                </div>
+                                <div class="list_cen_text">
+                                    <a href="#" target="_blank">
+                                        <h3>费城、大瀑布、多伦多、蒙特利尔，美加东部 8日游（接送机/豪华酒店）</h3>
+                                        <p>
+                                            美加两国最休闲游览线路：繁华的纽约，古老的费城，庄严的华盛顿，欣赏壮阔的尼亚加拉大瀑布，再到迷人的多伦多，厚重的渥太华，多情的蒙特利尔，浪漫的魁北克，尽情欣赏美加两国最经典人文自然景观。
+                                        </p>
+                                        <div>
+                                            <span>配房服务</span><span>加订酒店</span><span>接机参团</span><span>结束送机</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="list_cen_price">
+                                    <div class="price_top">
+                                        <div class="zhekou">
+                                            <span>8<em>折</em></span>
+                                            <i></i><i></i><i></i><i></i>
+                                        </div>
+                                    </div>
+                                    <div class="price_bot">
+                                        <p>￥43345<em>/人起</em></p>
+                                        <p>￥56565</p>
+                                        <a href="#" target="_blank" class="btn btn-warning">预订</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list_cen_bottom">
+                                <dl class="list_dl">
+                                    <dd>出发：乌鲁木齐</dd>
+                                    <dd>结束：乌鲁木齐</dd>
+                                    <dd>
+                                        景点：<span>红山</span><span>红山地宫</span><span>红山鬼宫</span><span>红山眺望塔</span><span>红山游泳池</span><span>红山公园</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list_cen_top">
+                                <div class="list_cen_img scale">
+                                    <a href="#" target="_blank">
+                                        <img src="images/img4.jpg" />
+                                    </a>
+                                    <p>产品编号：NYSD-45</p>
+                                </div>
+                                <div class="list_cen_text">
+                                    <a href="#" target="_blank">
+                                        <h3>费城、大瀑布、多伦多、蒙特利尔，美加东部 8日游（接送机/豪华酒店）</h3>
+                                        <p>
+                                            美加两国最休闲游览线路：繁华的纽约，古老的费城，庄严的华盛顿，欣赏壮阔的尼亚加拉大瀑布，再到迷人的多伦多，厚重的渥太华，多情的蒙特利尔，浪漫的魁北克，尽情欣赏美加两国最经典人文自然景观。
+                                        </p>
+                                        <div>
+                                            <span>配房服务</span><span>加订酒店</span><span>接机参团</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="list_cen_price">
+                                    <div class="price_top">
+                                        <div class="zhekou">
+                                            <span>8.8<em>折</em></span>
+                                            <i></i><i></i><i></i><i></i>
+                                        </div>
+                                    </div>
+                                    <div class="price_bot">
+                                        <p>￥43345<em>/人起</em></p>
+                                        <p>￥56565</p>
+                                        <a href="#" target="_blank" class="btn btn-warning">预订</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list_cen_bottom">
+                                <dl class="list_dl">
+                                    <dd>出发：乌鲁木齐</dd>
+                                    <dd>结束：乌鲁木齐</dd>
+                                    <dd>
+                                        景点：<span>红山</span><span>红山地宫</span><span>红山鬼宫</span><span>红山眺望塔</span><span>红山游泳池</span><span>红山公园</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list_cen_top">
+                                <div class="list_cen_img scale">
+                                    <a href="#" target="_blank">
+                                        <img src="images/img3.jpg" />
+                                    </a>
+                                    <p>产品编号：NYSD-45</p>
+                                </div>
+                                <div class="list_cen_text">
+                                    <a href="#" target="_blank">
+                                        <h3>费城、大瀑布、多伦多、蒙特利尔，美加东部 8日游（接送机/豪华酒店）</h3>
+                                        <p>
+                                            美加两国最休闲游览线路：繁华的纽约，古老的费城，庄严的华盛顿，欣赏壮阔的尼亚加拉大瀑布，再到迷人的多伦多，厚重的渥太华，多情的蒙特利尔，浪漫的魁北克，尽情欣赏美加两国最经典人文自然景观。
+                                        </p>
+                                        <div>
+                                            <span>配房服务</span><span>加订酒店</span><span>接机参团</span><span>结束送机</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="list_cen_price">
+                                    <div class="price_top">
+                                        <div class="zhekou">
+                                            <span>8<em>折</em></span>
+                                            <i></i><i></i><i></i><i></i>
+                                        </div>
+                                    </div>
+                                    <div class="price_bot">
+                                        <p>￥43345<em>/人起</em></p>
+                                        <p>￥56565</p>
+                                        <a href="#" target="_blank" class="btn btn-warning">预订</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list_cen_bottom">
+                                <dl class="list_dl">
+                                    <dd>出发：乌鲁木齐</dd>
+                                    <dd>结束：乌鲁木齐</dd>
+                                    <dd>
+                                        景点：<span>红山</span><span>红山地宫</span><span>红山鬼宫</span><span>红山眺望塔</span><span>红山游泳池</span><span>红山公园</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list_cen_top">
+                                <div class="list_cen_img scale">
+                                    <a href="#" target="_blank">
+                                        <img src="images/img4.jpg" />
+                                    </a>
+                                    <p>产品编号：NYSD-45</p>
+                                </div>
+                                <div class="list_cen_text">
+                                    <a href="#" target="_blank">
+                                        <h3>费城、大瀑布、多伦多、蒙特利尔，美加东部 8日游（接送机/豪华酒店）</h3>
+                                        <p>
+                                            美加两国最休闲游览线路：繁华的纽约，古老的费城，庄严的华盛顿，欣赏壮阔的尼亚加拉大瀑布，再到迷人的多伦多，厚重的渥太华，多情的蒙特利尔，浪漫的魁北克，尽情欣赏美加两国最经典人文自然景观。
+                                        </p>
+                                        <div>
+                                            <span>配房服务</span><span>加订酒店</span><span>接机参团</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="list_cen_price">
+                                    <div class="price_top">
+                                        <div class="zhekou">
+                                            <span>8.8<em>折</em></span>
+                                            <i></i><i></i><i></i><i></i>
+                                        </div>
+                                    </div>
+                                    <div class="price_bot">
+                                        <p>￥43345<em>/人起</em></p>
+                                        <p>￥56565</p>
+                                        <a href="#" target="_blank" class="btn btn-warning">预订</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list_cen_bottom">
+                                <dl class="list_dl">
+                                    <dd>出发：乌鲁木齐</dd>
+                                    <dd>结束：乌鲁木齐</dd>
+                                    <dd>
+                                        景点：<span>红山</span><span>红山地宫</span><span>红山鬼宫</span><span>红山眺望塔</span><span>红山游泳池</span><span>红山公园</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list_fenye">
+                    <nav>
+                        <ul class="pagination pagination-lg">
+                            <li><a href="#">&laquo;上一页</a></li>
+                            <li><a href="#">1</a></li>
+                            <li class="active"><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">下一页&raquo;</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="list_con_right">
+                <div id="list_fixed">
+                    <div class="list_con_right_box">
+                        <ul class="advantage">
+                            <li>
+                                <div class="advantage_img">
+                                    <img src="images/list_icons.png" />
+                                </div>
+                                <div class="advantage_text">
+                                    <h3>美国旅行社执照</h3>
+                                    <span>CST#2119862-40</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="advantage_img">
+                                    <img src="images/list_icons.png" />
+                                </div>
+                                <div class="advantage_text">
+                                    <h3>A评级旅行网站</h3>
+                                    <span>Better Business Bureau®</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="advantage_img">
+                                    <img src="images/list_icons.png" />
+                                </div>
+                                <div class="advantage_text">
+                                    <h3>旅游产品直采</h3>
+                                    <span>欧美当地最优地接社</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="advantage_img">
+                                    <img src="images/list_icons.png" />
+                                </div>
+                                <div class="advantage_text">
+                                    <h3>买完再比价</h3>
+                                    <span>48H内同款退差保证</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="advantage_img">
+                                    <img src="images/list_icons.png" />
+                                </div>
+                                <div class="advantage_text">
+                                    <h3>玩哪儿-手机版</h3>
+                                    <span>随手乐享旅行规划&预订</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list_con_right_box advert_plan">
+                        <div class="img">
+                            <img src="images/img3.jpg" />
+                        </div>
+                        <div class="text">
+                            <span>现在就来创建</span>
+                            <h3>自主定价的行程规划</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer id="footer">
+        <div class="content">
+            <div class="site_link">
+                <h3>-友情链接-</h3>
+                <div class="site_link_con">
+                    <a href="#" target="_blank"><img src="images/link.png" /></a>
+                    <a href="#" target="_blank"><img src="images/link.png" /></a>
+                    <a href="#" target="_blank"><img src="images/link.png" /></a>
+                    <a href="#" target="_blank"><img src="images/link.png" /></a>
+                    <a href="#" target="_blank"><img src="images/link.png" /></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" /></a>
+                </div>
+                <div class="copyright_con">
+                    <p>Copyright©2006-2015 www.xinjiangtour.com | All rights reserved 新ICP备13003149号-1<span>联系电话：0991-12345678</span></p>
+                    <p>新疆中国国际旅行社有限责任公司<span>地址：中国新疆乌鲁木齐市人民东路33号</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lib/jquery/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/scrollfix-1.4.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/basic.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/list.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
