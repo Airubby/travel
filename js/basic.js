@@ -1,41 +1,30 @@
 (function() {
-    /*导航下拉*/
-    $(".navdown").hover(function() {
-            $(".navdown_list").css("display", "block");
-        }, function() {
-            $(".navdown_list").css("display", "none");
-        })
-        /*首页效果*/
+    //搜索
+    var search_li = $(".search_text_list li");
+    for (var i = 0; i < search_li.length; i++) {
+        search_li[i].onclick = function() {
+            $($(".search_data").get(0)).text($(this).text())
+            $($(".search_data").get(0)).data("search", $(this).data("search"));
+            console.log($($(".search_data").get(0)).data("search"))
+        }
+    }
+    //导航 
+    $("#nav_pop_wrapper").slide({
+        titCell: ".mod_cate",
+        targetCell: ".mod_subcate",
+        delayTime: 0,
+        triggerTime: 10,
+        defaultPlay: false,
+        returnDefault: true
+    });
+    /*首页效果*/
     jQuery(".index_slide").slide({ mainCell: ".bd ul", autoPlay: true, effect: "fold" });
     jQuery(".slideBox_dz").slide({ mainCell: ".bd ul", effect: "leftLoop" });
     jQuery(".picScroll-left").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "leftLoop", vis: 3, easing: "easeInQuint" });
-    $("#header").scrollFix();
-    /*注册登录*/
-    $("#register").click(function() {
-        $("#reglogin_con").css("display", "none");
-        $("#reglogin_con .login").css("display", "none");
-        $("#reglogin_con").css("display", "block");
-        $("#reglogin_con .register").css("display", "block");
-    });
-    $("#login").click(function() {
-        $("#reglogin_con").css("display", "none");
-        $("#reglogin_con .register").css("display", "none");
-        $("#reglogin_con").css("display", "block");
-        $("#reglogin_con .login").css("display", "block");
-    });
-    $("#reg_close").click(function() {
-        $("#reglogin_con").css("display", "none");
-        $("#reglogin_con .register").css("display", "none");
-    });
-    $("#lo_close").click(function() {
-        $("#reglogin_con").css("display", "none");
-        $("#reglogin_con .login").css("display", "none");
-    });
     /*列表页*/
     var list_dl = 896 - $(".list_dl dd:nth-of-type(1)").outerWidth() - $(".list_dl dd:nth-of-type(2)").outerWidth();
     $(".list_dl dd:nth-of-type(3)").outerWidth(list_dl);
     $("#list_fixed").scrollFix({ distanceTop: 70, endPos: 318 });
-
 
 
 
