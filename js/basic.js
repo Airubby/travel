@@ -25,9 +25,21 @@
     var list_dl = 896 - $(".list_dl dd:nth-of-type(1)").outerWidth() - $(".list_dl dd:nth-of-type(2)").outerWidth();
     $(".list_dl dd:nth-of-type(3)").outerWidth(list_dl);
     $("#list_fixed").scrollFix({ distanceTop: 70, endPos: 327 });
-
-
-
+    //报价
+    jQuery(".slideBox_baojia").slide({
+        mainCell: ".bd",
+        effect: "left",
+        trigger: "click",
+        easing: "easeInQuint"
+    });
+    $("#btn_baojia").click(function() {
+        $("#baojia_bg").css("visibility", "visible");
+    });
+    $(".baojia_close").each(function() {
+        $(this).click(function() {
+            $("#baojia_bg").css("visibility", "hidden");
+        })
+    })
 
 
 })();
