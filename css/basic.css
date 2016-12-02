@@ -296,6 +296,10 @@ img {
     z-index: 9999;
 }
 
+.nav_pop:hover #nav_pop_wrapper {
+    display: block;
+}
+
 .nav_wrapper_title {
     width: 200px;
     height: 35px;
@@ -304,6 +308,7 @@ img {
     text-align: center;
     line-height: 35px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 #nav_pop_wrapper {
@@ -312,6 +317,11 @@ img {
     position: relative;
     background: rgba(0, 0, 0, 0.7);
     z-index: 1;
+    display: none;
+}
+
+.index_nav_pop_wrapper {
+    display: block !important;
 }
 
 #nav_pop_wrapper .mod_cate:hover .nav_pop_label {

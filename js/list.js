@@ -1,21 +1,12 @@
 (function() {
     "use strict"
     var num = 6;
-    var section_top = $(".section_top a").eq(0).text();
     var showTwo = $(".showTwo");
     var butt = null; //showTwo下面的button
     var letterArr = [];
     var jdArr = [];
     var jdLetterArr = [];
-    $(".section_top a").eq(0).addClass("active");
-    $(".showOne").text(section_top);
-    $(".section_top a").each(function() {
-        $(this).click(function() {
-            $(this).addClass("active");
-            $(this).siblings().removeClass("active");
-            $(".showOne").text($(this).text())
-        })
-    });
+
 
     $(".selected_con_list").each(function(i, obj) {
         obj.title = $(obj).find(".title").text();
@@ -115,6 +106,9 @@
 
     showTwo.bind('DOMNodeInserted', function(e) {
         // console.log('element now contains: ' + $(e.target).html());
+        if ($(".showTwo").html() != null) {
+            $(".selected").css("display", "block");
+        }
         butt = showTwo.get(0).getElementsByTagName('button');
         if (butt.length) {
             for (var i = 0; i < butt.length; i++) {
