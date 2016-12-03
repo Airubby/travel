@@ -240,112 +240,609 @@
         <div class="baojia_bg" id="baojia_bg">
             <div class="baojia_detail">
                 <div class="slideBox_baojia">
-                    <div class="bd">
+
+                    <form class="bd" action="">
+                        <!--根据人数安排合理的日期-->
                         <div class="baojia_list">
                             <div class="title">
                                 <h2>根据人数安排合理的日期</h2>
                                 <a href="javascript:;" class="glyphicon glyphicon-remove baojia_close"></a>
                             </div>
                             <div class="baojia_list_con">
-                                根据人数安排合理的日期
+                                <div class="baojia_box">
+                                    <h2>出团人数：</h2>
+                                    <div class="baojia_box_con row baojia_ctrs">
+                                        <p class="baojia_input col-md-4">
+                                            小孩：<span class="glyphicon glyphicon-minus"></span><input type="text" name="" value="0"><span class="glyphicon glyphicon-plus"></span>人
+                                        </p>
+                                        <p class="baojia_input col-md-4">
+                                            老人：<span class="glyphicon glyphicon-minus"></span><input type="text" name="" value="0"><span class="glyphicon glyphicon-plus"></span>人
+                                        </p>
+                                        <p class="baojia_input col-md-4">
+                                            成年人：<span class="glyphicon glyphicon-minus"></span><input type="text" name="" value="0"><span class="glyphicon glyphicon-plus"></span>人
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="baojia_box">
+                                    <h2>证件份数：</h2>
+                                    <div class="baojia_box_con row baojia_ctrs">
+                                        <p class="baojia_input col-md-4">
+                                            学生证：<span class="glyphicon glyphicon-minus"></span><input type="text" name="" value="0"><span class="glyphicon glyphicon-plus"></span>份
+                                        </p>
+                                        <p class="baojia_input col-md-4">
+                                            老年证：<span class="glyphicon glyphicon-minus"></span><input type="text" name="" value="0"><span class="glyphicon glyphicon-plus"></span>份
+                                        </p>
+                                        <p class="baojia_input col-md-4">
+                                            军官证：<span class="glyphicon glyphicon-minus"></span><input type="text" name="" value="0"><span class="glyphicon glyphicon-plus"></span>份
+                                        </p>
+                                        <p class="baojia_input col-md-4">
+                                            残疾证：<span class="glyphicon glyphicon-minus"></span><input type="text" name="" value="0"><span class="glyphicon glyphicon-plus"></span>份
+                                        </p>
+                                        <p class="baojia_input col-md-4">
+                                            教师证：<span class="glyphicon glyphicon-minus"></span><input type="text" name="" value="0"><span class="glyphicon glyphicon-plus"></span>份
+                                        </p>
+                                        <p class="baojia_input col-md-4">
+                                            记者证：<span class="glyphicon glyphicon-minus"></span><input type="text" name="" value="0"><span class="glyphicon glyphicon-plus"></span>份
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="baojia_box">
+                                    <h2>出团时间：</h2>
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-6 baojia_riqi">
+                                            开始日期<span>
+                                                <input id="ctrq" type="text" placeholder="可以选填"/><i class="glyphicon glyphicon-remove"></i>
+                                            <img onclick="WdatePicker({el:'ctrq'})" src="lib/My97DatePicker/skin/datePicker.gif" width="20" height="26" align="absmiddle"></span>
+                                        </p>
+                                        <p class="col-md-6 baojia_riqi">
+                                            结束日期<span>
+                                                <input id="jsrq" type="text" placeholder="可以选填"/><i class="glyphicon glyphicon-remove"></i>
+                                            <img onclick="WdatePicker({el:'jsrq'})" src="lib/My97DatePicker/skin/datePicker.gif" width="20" height="26" align="absmiddle"></span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="switch">
                                 <a class="next" href="javascript:void(0)">下一步<i>&raquo;</i></a>
                             </div>
                         </div>
+                        <!--根据人数安排合理的日期-->
+                        <!--选择你想要去的景点-->
                         <div class="baojia_list">
                             <div class="title">
                                 <h2>选择你想要去的景点</h2>
                                 <a href="javascript:;" class="glyphicon glyphicon-remove baojia_close"></a>
                             </div>
                             <div class="baojia_list_con">
-                                选择你想要去的景点
+                                <div class="baojia_box">
+                                    <h2>乌鲁木齐：</h2>
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-4">
+                                            乌鲁木齐人民公园（<i>0元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-1" id="jd_checkbox-1-1" /><label for="jd_checkbox-1-1"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            红山公园（<i>0元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-1" id="jd_checkbox-1-2" /><label for="jd_checkbox-1-2"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            一号冰川（<i>200元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-1" id="jd_checkbox-1-3" /><label for="jd_checkbox-1-3"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            东白杨沟（<i>120元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-1" id="jd_checkbox-1-4" /><label for="jd_checkbox-1-4"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            柴窝堡湖（<i>420元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-1" id="jd_checkbox-1-5" /><label for="jd_checkbox-1-5"></label></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="baojia_box">
+                                    <h2>吐鲁番：</h2>
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-4">
+                                            火焰山（<i>100元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-2" id="jd_checkbox-2-1" /><label for="jd_checkbox-2-1"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            葡萄沟（<i>130元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-2" id="jd_checkbox-2-2" /><label for="jd_checkbox-2-2"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            坎儿井（<i>80元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-2" id="jd_checkbox-2-3" /><label for="jd_checkbox-2-3"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            交河故城（<i>90元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-2" id="jd_checkbox-2-4" /><label for="jd_checkbox-2-4"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            维吾尔古村（<i>420元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-2" id="jd_checkbox-2-5" /><label for="jd_checkbox-2-5"></label></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="baojia_box">
+                                    <h2>喀纳斯：</h2>
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-4">
+                                            百花园（<i>0元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-3" id="jd_checkbox-3-1" /><label for="jd_checkbox-3-1"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            图瓦村（<i>0元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-3" id="jd_checkbox-3-2" /><label for="jd_checkbox-3-2"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            友谊峰（<i>200元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-3" id="jd_checkbox-3-3" /><label for="jd_checkbox-3-3"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            鸭泽湖（<i>120元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-3" id="jd_checkbox-3-4" /><label for="jd_checkbox-3-4"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            泰加林廊道（<i>420元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-3" id="jd_checkbox-3-5" /><label for="jd_checkbox-3-5"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            花楸谷（<i>420元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-3" id="jd_checkbox-3-6" /><label for="jd_checkbox-3-6"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            黑湖（<i>420元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-3" id="jd_checkbox-3-7" /><label for="jd_checkbox-3-7"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            贾登峪（<i>420元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-3" id="jd_checkbox-3-8" /><label for="jd_checkbox-3-8"></label></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="baojia_box">
+                                    <h2>伊犁：</h2>
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-4">
+                                            伊犁大草原（<i>600元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-4" id="jd_checkbox-4-1" /><label for="jd_checkbox-4-1"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            赛里木湖<i>130元</i>）
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jd_checkbox-4" id="jd_checkbox-4-2" /><label for="jd_checkbox-4-2"></label></span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="switch">
                                 <a class="prev" href="javascript:void(0)"><i>&laquo;</i>上一步</a>
                                 <a class="next" href="javascript:void(0)">下一步<i>&raquo;</i></a>
                             </div>
                         </div>
+                        <!--选择你想要去的景点-->
+                        <!--根据你的需求选择交通-->
                         <div class="baojia_list">
                             <div class="title">
                                 <h2>根据你的需求选择交通</h2>
                                 <a href="javascript:;" class="glyphicon glyphicon-remove baojia_close"></a>
                             </div>
                             <div class="baojia_list_con">
-                                根据你的需求选择相应的交通
+                                <div class="baojia_box">
+                                    <h2>我们是土豪，我们要包车：</h2>
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-4">
+                                            小轿车（5座）<i>600/天</i>
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jt_checkbox-1" id="jt_checkbox-1-1" /><label for="jt_checkbox-1-1"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            商务车（7座）<i>1000/天</i>
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jt_checkbox-1" id="jt_checkbox-1-2" /><label for="jt_checkbox-1-2"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            越野车（5座）<i>1200/天</i>
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jt_checkbox-1" id="jt_checkbox-1-3" /><label for="jt_checkbox-1-3"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            11-14座 <i>1500/天</i>
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jt_checkbox-1" id="jt_checkbox-1-4" /><label for="jt_checkbox-1-4"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            15-19座<i>1600/天</i>
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jt_checkbox-1" id="jt_checkbox-1-5" /><label for="jt_checkbox-1-5"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            35-37座<i>2000/天</i>
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jt_checkbox-1" id="jt_checkbox-1-6" /><label for="jt_checkbox-1-6"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            45座<i>2500/天</i>
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jt_checkbox-1" id="jt_checkbox-1-7" /><label for="jt_checkbox-1-7"></label></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="baojia_box">
+                                    <h2>我们勤俭节约，我们选择交通：</h2>
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-4">
+                                            汽车
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jt_checkbox-2" id="jt_checkbox-2-1" /><label for="jt_checkbox-2-1"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            火车
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jt_checkbox-2" id="jt_checkbox-2-2" /><label for="jt_checkbox-2-2"></label></span>
+                                        </p>
+                                        <p class="col-md-4">
+                                            飞机
+                                            <span class="baojia_checkbox"><input type="checkbox" name="jt_checkbox-2" id="jt_checkbox-2-3" /><label for="jt_checkbox-2-3"></label></span>
+                                        </p>
+
+                                    </div>
+                                </div>
                             </div>
                             <div class="switch">
                                 <a class="prev" href="javascript:void(0)"><i>&laquo;</i>上一步</a>
                                 <a class="next" href="javascript:void(0)">下一步<i>&raquo;</i></a>
                             </div>
                         </div>
+                        <!--根据你的需求选择交通-->
+                        <!--根据你的需求选择酒店-->
                         <div class="baojia_list">
                             <div class="title">
                                 <h2>根据你的需求选择酒店</h2>
                                 <a href="javascript:;" class="glyphicon glyphicon-remove baojia_close"></a>
                             </div>
                             <div class="baojia_list_con">
-                                根据你的需求选择酒店
+                                <div class="baojia_box">
+                                    <h2>不需要酒店：</h2>
+                                    <span class="baojia_radio"><input type="radio" name="radio_jiudian" id="radio_jiudian-1" checked /><label for="radio_jiudian-1"></label></span>
+                                </div>
+                                <div class="baojia_box">
+                                    <h2>需要酒店：</h2>
+
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-3">
+                                            三星级酒店
+                                            <span class="baojia_radio"><input type="radio" name="radio_jiudian" id="radio_jiudian-2" /><label for="radio_jiudian-2"></label></span>
+                                        </p>
+                                        <p class="baojia_input col-md-3">
+                                            标间：<span class="glyphicon glyphicon-minus"></span><input type="text" name=" " value="0"><span class="glyphicon glyphicon-plus"></span>间
+                                        </p>
+                                        <p class="baojia_input col-md-3">
+                                            单间：<span class="glyphicon glyphicon-minus"></span><input type="text" name=" " value="0"><span class="glyphicon glyphicon-plus"></span>间
+                                        </p>
+                                        <p class="baojia_input col-md-3">
+                                            三人间：<span class="glyphicon glyphicon-minus"></span><input type="text" name=" " value="0"><span class="glyphicon glyphicon-plus"></span>间
+                                        </p>
+                                    </div>
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-3">
+                                            四星级酒店
+                                            <span class="baojia_radio"><input type="radio" name="radio_jiudian" id="radio_jiudian-3" /><label for="radio_jiudian-3"></label></span>
+                                        </p>
+                                        <p class="baojia_input col-md-3">
+                                            标间：<span class="glyphicon glyphicon-minus"></span><input type="text" name=" " value="0"><span class="glyphicon glyphicon-plus"></span>间
+                                        </p>
+                                        <p class="baojia_input col-md-3">
+                                            单间：<span class="glyphicon glyphicon-minus"></span><input type="text" name=" " value="0"><span class="glyphicon glyphicon-plus"></span>间
+                                        </p>
+                                        <p class="baojia_input col-md-3">
+                                            三人间：<span class="glyphicon glyphicon-minus"></span><input type="text" name=" " value="0"><span class="glyphicon glyphicon-plus"></span>间
+                                        </p>
+                                    </div>
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-3">
+                                            五星级酒店
+                                            <span class="baojia_radio"><input type="radio" name="radio_jiudian" id="radio_jiudian-4" /><label for="radio_jiudian-4"></label></span>
+                                        </p>
+                                        <p class="baojia_input col-md-3">
+                                            标间：<span class="glyphicon glyphicon-minus"></span><input type="text" name=" " value="0"><span class="glyphicon glyphicon-plus"></span>间
+                                        </p>
+                                        <p class="baojia_input col-md-3">
+                                            单间：<span class="glyphicon glyphicon-minus"></span><input type="text" name=" " value="0"><span class="glyphicon glyphicon-plus"></span>间
+                                        </p>
+                                        <p class="baojia_input col-md-3">
+                                            三人间：<span class="glyphicon glyphicon-minus"></span><input type="text" name=" " value="0"><span class="glyphicon glyphicon-plus"></span>间
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="switch">
                                 <a class="prev" href="javascript:void(0)"><i>&laquo;</i>上一步</a>
                                 <a class="next" href="javascript:void(0)">下一步<i>&raquo;</i></a>
                             </div>
                         </div>
+                        <!--根据你的需求选择酒店-->
+                        <!--根据你的需求选择餐饮-->
                         <div class="baojia_list">
                             <div class="title">
                                 <h2>根据你的需求选择餐饮</h2>
-                                <a href="javascript:;" class="glyphicon glyphicon-remove baojia_close"></a>
+                                <a href="javascript:; " class="glyphicon glyphicon-remove baojia_close"></a>
                             </div>
                             <div class="baojia_list_con">
-                                根据你的需求选择相应的餐饮
+                                <div class="baojia_box">
+                                    <h2>不需要餐饮：</h2>
+                                    <span class="baojia_radio"><input type="radio" name="radio_canyin" id="radio_canyin" checked /><label for="radio_canyin"></label></span>
+                                </div>
+                                <div class="baojia_box">
+                                    <h2>需要餐饮：</h2><span class="baojia_radio"><input type="radio" name="radio_canyin" id="radio_canyin-1" /><label for="radio_canyin-1"></label></span>
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-2">
+                                            早餐
+                                            <span class="baojia_checkbox"><input type="checkbox" name="cy_checkbox" id="cy_checkbox-1" /><label for="cy_checkbox-1"></label></span>
+                                        </p>
+                                        <p class="col-md-2">
+                                            30元餐
+                                            <span class="baojia_radio"><input type="radio" name="radio_canyin_zaoc" id="radio_canyin_zaoc-1" /><label for="radio_canyin_zaoc-1"></label></span>
+                                        </p>
+                                        <p class="col-md-2">
+                                            40元餐
+                                            <span class="baojia_radio"><input type="radio" name="radio_canyin_zaoc" id="radio_canyin_zaoc-2" /><label for="radio_canyin_zaoc-2"></label></span>
+                                        </p>
+                                        <p class="col-md-2">
+                                            50元餐
+                                            <span class="baojia_radio"><input type="radio" name="radio_canyin_zaoc" id="radio_canyin_zaoc-3" /><label for="radio_canyin_zaoc-3"></label></span>
+                                        </p>
+                                        <p class="col-md-2">
+                                            60元餐
+                                            <span class="baojia_radio"><input type="radio" name="radio_canyin_zaoc" id="radio_canyin_zaoc-4" /><label for="radio_canyin_zaoc-4"></label></span>
+                                        </p>
+                                        <p class="col-md-2 baojia_input">
+                                            共<span class="glyphicon glyphicon-minus"></span><input type="text" name=" " value="0"><span class="glyphicon glyphicon-plus"></span>天
+                                        </p>
+                                    </div>
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-2">
+                                            午餐
+                                            <span class="baojia_checkbox"><input type="checkbox" name="cy_checkbox" id="cy_checkbox-2" /><label for="cy_checkbox-2"></label></span>
+                                        </p>
+                                        <p class="col-md-2">
+                                            30元餐
+                                            <span class="baojia_radio"><input type="radio" name="radio_canyin_wuc" id="radio_canyin_wuc-1" /><label for="radio_canyin_wuc-1"></label></span>
+                                        </p>
+                                        <p class="col-md-2">
+                                            40元餐
+                                            <span class="baojia_radio"><input type="radio" name="radio_canyin_wuc" id="radio_canyin_wuc-2" /><label for="radio_canyin_wuc-2"></label></span>
+                                        </p>
+                                        <p class="col-md-2">
+                                            50元餐
+                                            <span class="baojia_radio"><input type="radio" name="radio_canyin_wuc" id="radio_canyin_wuc-3" /><label for="radio_canyin_wuc-3"></label></span>
+                                        </p>
+                                        <p class="col-md-2">
+                                            60元餐
+                                            <span class="baojia_radio"><input type="radio" name="radio_canyin_wuc" id="radio_canyin_wuc-4" /><label for="radio_canyin_wuc-4"></label></span>
+                                        </p>
+                                        <p class="col-md-2 baojia_input">
+                                            共<span class="glyphicon glyphicon-minus"></span><input type="text" name=" " value="0"><span class="glyphicon glyphicon-plus"></span>天
+                                        </p>
+                                    </div>
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-2">
+                                            晚餐
+                                            <span class="baojia_checkbox"><input type="checkbox" name="cy_checkbox" id="cy_checkbox-3" /><label for="cy_checkbox-3"></label></span>
+                                        </p>
+                                        <p class="col-md-2">
+                                            30元餐
+                                            <span class="baojia_radio"><input type="radio" name="radio_canyin_wanc" id="radio_canyin_wanc-1" /><label for="radio_canyin_wanc-1"></label></span>
+                                        </p>
+                                        <p class="col-md-2">
+                                            40元餐
+                                            <span class="baojia_radio"><input type="radio" name="radio_canyin_wanc" id="radio_canyin_wanc-2" /><label for="radio_canyin_wanc-2"></label></span>
+                                        </p>
+                                        <p class="col-md-2">
+                                            50元餐
+                                            <span class="baojia_radio"><input type="radio" name="radio_canyin_wanc" id="radio_canyin_wanc-3" /><label for="radio_canyin_wanc-3"></label></span>
+                                        </p>
+                                        <p class="col-md-2">
+                                            60元餐
+                                            <span class="baojia_radio"><input type="radio" name="radio_canyin_wanc" id="radio_canyin_wanc-4" /><label for="radio_canyin_wanc-4"></label></span>
+                                        </p>
+                                        <p class="col-md-2 baojia_input">
+                                            共<span class="glyphicon glyphicon-minus"></span><input type="text" name=" " value="0"><span class="glyphicon glyphicon-plus"></span>天
+                                        </p>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="switch">
-                                <a class="prev" href="javascript:void(0)"><i>&laquo;</i>上一步</a>
-                                <a class="next" href="javascript:void(0)">下一步<i>&raquo;</i></a>
+                                <a class="prev " href="javascript:void(0)"><i>&laquo;</i>上一步</a>
+                                <a class="next " href="javascript:void(0)">下一步<i>&raquo;</i></a>
                             </div>
                         </div>
+                        <!--根据你的需求选择餐饮-->
+                        <!--根据你的需求选择导游-->
                         <div class="baojia_list">
                             <div class="title">
                                 <h2>根据你的需求选择导游</h2>
-                                <a href="javascript:;" class="glyphicon glyphicon-remove baojia_close"></a>
+                                <a href="javascript:; " class="glyphicon glyphicon-remove baojia_close"></a>
                             </div>
                             <div class="baojia_list_con">
-                                根据你的需求选择导游
+                                <div class="baojia_box">
+                                    <h2>不需要导游：</h2>
+                                    <span class="baojia_radio"><input type="radio" name="radio_daoyou" id="radio_daoyou" checked /><label for="radio_daoyou"></label></span>
+                                </div>
+                                <div class="baojia_box">
+                                    <h2>需要导游：</h2><span class="baojia_radio"><input type="radio" name="radio_daoyou" id="radio_daoyou-1" /><label for="radio_daoyou-1"></label></span>
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-6">
+                                            工作经验1-3年<i>（300/天）</i>
+                                            <span class="baojia_checkbox"><input type="checkbox" name="dy_checkbox" id="dy_checkbox-1" /><label for="dy_checkbox-1"></label></span>
+                                        </p>
+                                        <p class="col-md-6">
+                                            工作经验3-5年<i>（500/天）</i>
+                                            <span class="baojia_checkbox"><input type="checkbox" name="dy_checkbox" id="dy_checkbox-2" /><label for="dy_checkbox-2"></label></span>
+                                        </p>
+                                        <p class="col-md-6">
+                                            工作经验6-8年<i>（600/天）</i>
+                                            <span class="baojia_checkbox"><input type="checkbox" name="dy_checkbox" id="dy_checkbox-3" /><label for="dy_checkbox-3"></label></span>
+                                        </p>
+                                        <p class="col-md-6">
+                                            工作经验8年以上<i>（800/天）</i>
+                                            <span class="baojia_checkbox"><input type="checkbox" name="dy_checkbox" id="dy_checkbox-4" /><label for="dy_checkbox-4"></label></span>
+                                        </p>
+                                        <p class="col-md-6">
+                                            特别推荐：私人管家（贴心服务+优质讲解）<i>（400/天）</i>
+                                            <span class="baojia_checkbox"><input type="checkbox" name="dy_checkbox" id="dy_checkbox-5" /><label for="dy_checkbox-5"></label></span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="switch">
-                                <a class="prev" href="javascript:void(0)"><i>&laquo;</i>上一步</a>
-                                <a class="next" href="javascript:void(0)">下一步<i>&raquo;</i></a>
+                                <a class="prev " href="javascript:void(0)"><i>&laquo;</i>上一步</a>
+                                <a class="next " href="javascript:void(0)">下一步<i>&raquo;</i></a>
                             </div>
                         </div>
+                        <!--根据你的需求选择导游-->
+                        <!--根据你的需求选择保险、接送机-->
                         <div class="baojia_list">
                             <div class="title">
                                 <h2>根据你的需求选择保险、接送机</h2>
-                                <a href="javascript:;" class="glyphicon glyphicon-remove baojia_close"></a>
+                                <a href="javascript:; " class="glyphicon glyphicon-remove baojia_close"></a>
                             </div>
                             <div class="baojia_list_con">
-                                根据你的需求选择保险、接送机
+                                <div class="baojia_box">
+                                    <h2>保险：</h2>
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-6">
+                                            保险费 50元/人 保额20万
+                                        </p>
+                                        <p class="col-md-3">
+                                            需要<span class="baojia_radio"><input type="radio" name="radio_baoxian" id="radio_baoxian-1" checked /><label for="radio_baoxian-1"></label></span>
+                                        </p>
+                                        <p class="col-md-3">
+                                            不需要<span class="baojia_radio"><input type="radio" name="radio_baoxian" id="radio_baoxian-2" /><label for="radio_baoxian-2"></label></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="baojia_box">
+                                    <h2>接送机：</h2>
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-6">
+                                            选择你的需求，选择是否接送机，如不需要则不选
+                                        </p>
+                                        <p class="col-md-3">
+                                            需要接机<span class="baojia_checkbox"><input type="checkbox" name="jsj_checkbox" id="jsj_checkbox-1" /><label for="jsj_checkbox-1"></label></span>
+                                        </p>
+                                        <p class="col-md-3">
+                                            需要送机<span class="baojia_checkbox"><input type="checkbox" name="jsj_checkbox" id="jsj_checkbox-2" /><label for="jsj_checkbox-2"></label></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="baojia_box">
+                                    <h2>接送机车型：</h2>
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-3">
+                                            80元/趟（小车）<span class="baojia_checkbox"><input type="checkbox" name="jsj_checkbox" id="jsj_checkbox-1" /><label for="jsj_checkbox-1"></label></span>
+                                        </p>
+                                        <p class="col-md-3">
+                                            160元/趟（商务车）<span class="baojia_checkbox"><input type="checkbox" name="jsj_checkbox" id="jsj_checkbox-2" /><label for="jsj_checkbox-2"></label></span>
+                                        </p>
+                                        <p class="col-md-3">
+                                            240元/趟（15-19座）<span class="baojia_checkbox"><input type="checkbox" name="jsj_checkbox" id="jsj_checkbox-3" /><label for="jsj_checkbox-3"></label></span>
+                                        </p>
+                                        <p class="col-md-3">
+                                            350元/趟（35座）<span class="baojia_checkbox"><input type="checkbox" name="jsj_checkbox" id="jsj_checkbox-4" /><label for="jsj_checkbox-4"></label></span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="switch">
-                                <a class="prev" href="javascript:void(0)"><i>&laquo;</i>上一步</a>
-                                <a class="next" href="javascript:void(0)">下一步<i>&raquo;</i></a>
+                                <a class="prev " href="javascript:void(0)"><i>&laquo;</i>上一步</a>
+                                <a class="next " href="javascript:void(0)">下一步<i>&raquo;</i></a>
                             </div>
                         </div>
+                        <!--根据你的需求选择保险、接送机-->
+                        <!--根据你的需求为你报价-->
                         <div class="baojia_list">
                             <div class="title">
                                 <h2>根据你的需求为你报价</h2>
-                                <a href="javascript:;" class="glyphicon glyphicon-remove baojia_close"></a>
+                                <a href="javascript:; " class="glyphicon glyphicon-remove baojia_close"></a>
                             </div>
                             <div class="baojia_list_con">
-                                根据你的需求为你报价
+                                <div class="baojia_box">
+                                    <h2>费用核算：</h2>
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-3">
+                                            景点费用：<i>3564元</i>
+                                        </p>
+                                        <p class="col-md-3">
+                                            交通费用：<i>3564元</i>
+                                        </p>
+                                        <p class="col-md-3">
+                                            住宿费用：<i>3564元</i>
+                                        </p>
+                                        <p class="col-md-3">
+                                            餐饮费用：<i>3564元</i>
+                                        </p>
+                                        <p class="col-md-3">
+                                            导游费用：<i>3564元</i>
+                                        </p>
+                                        <p class="col-md-3">
+                                            保险费用：<i>3564元</i>
+                                        </p>
+                                        <p class="col-md-3">
+                                            接送机费用：<i>3564元</i>
+                                        </p>
+                                        <p class="col-md-3">
+                                            综合费用：<i>3564元</i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="baojia_box">
+                                    <div class="baojia_box_con row">
+                                        <p class="col-md-9">
+                                            提示：综合费用是我司提供的综合型服务的服务费用
+                                        </p>
+                                        <p class="col-md-3">
+                                            费用合计：<i>352564元</i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="baojia_box">
+                                    <h2>根据你的需求为你推荐以下线路</h2>
+                                    <div class="baojia_box_con">
+                                        <ul class="row baojia_tjxl">
+                                            <li class="col-md-6">
+                                                <a href="#" target="_blank"><i>1</i>火车游：那拉提、赛湖双卧4日游火车游：那拉提、赛湖双卧4日游火车游：那拉提、赛湖双卧4日游</a>
+                                            </li>
+                                            <li class="col-md-6">
+                                                <a href="#" target="_blank"><i>2</i>火车游：那拉提、赛湖双卧4日游</a>
+                                            </li>
+                                            <li class="col-md-6">
+                                                <a href="#" target="_blank"><i>3</i>火车游：那拉提、赛湖双卧4日游</a>
+                                            </li>
+                                            <li class="col-md-6">
+                                                <a href="#" target="_blank"><i>4</i>火车游：那拉提、赛湖双卧4日游</a>
+                                            </li>
+                                            <li class="col-md-6">
+                                                <a href="#" target="_blank"><i>5</i>火车游：那拉提、赛湖双卧4日游</a>
+                                            </li>
+                                            <li class="col-md-6">
+                                                <a href="#" target="_blank"><i>6</i>火车游：那拉提、赛湖双卧4日游</a>
+                                            </li>
+                                            <li class="col-md-6">
+                                                <a href="#" target="_blank"><i>7</i>火车游：那拉提、赛湖双卧4日游</a>
+                                            </li>
+                                            <li class="col-md-6">
+                                                <a href="#" target="_blank"><i>8</i>火车游：那拉提、赛湖双卧4日游火车游：那拉提、赛湖双卧4日游火车游：那拉提、赛湖双卧4日游</a>
+                                            </li>
+                                            <li class="col-md-6">
+                                                <a href="#" target="_blank"><i>9</i>火车游：那拉提、赛湖双卧4日游</a>
+                                            </li>
+                                            <li class="col-md-6">
+                                                <a href="#" target="_blank"><i>10</i>火车游：那拉提、赛湖双卧4日游</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="switch">
-                                <a class="prev" href="javascript:void(0)"><i>&laquo;</i>上一步</a>
-                                <button type="button" class="btn btn-info">需求提交</button>
+                                <a class="prev " href="javascript:void(0)"><i>&laquo;</i>上一步</a>
+                                <button type="button " class="btn btn-info">需求提交</button>
                             </div>
                         </div>
-
-                    </div>
+                        <!--根据你的需求为你报价-->
+                    </form>
                 </div>
             </div>
         </div>
@@ -358,14 +855,14 @@
                 <h2>你只需要决定出发</h2>
                 <p>- 剩下所有的一切，交给无二之旅就好 -</p>
             </div>
-            <form action="" method="post">
+            <form action=" " method="post">
                 <div class="form_con">
                     <input type="text" name="name" id="name" placeholder="姓名" />
                     <input type="text" name="destination" id="destination" placeholder="目的地" />
                     <input type="text" name="travel_days" id="travel_days" placeholder="天数" />
                 </div>
                 <div class="form_con">
-                    <input type="tel" name="phone" id="phone" placeholder="手机" autocomplete="off" />
+                    <input type="tel " name="phone" id="phone" placeholder="手" autocomplete="off" />
                 </div>
                 <div class="form_con">
                     <textarea name="comment" id="comment" placeholder="备注内容"></textarea>
@@ -383,11 +880,11 @@
             <div class="site_link">
                 <h3>-友情链接-</h3>
                 <div class="site_link_con">
-                    <a href="javascript:;" target="_blank"><img src="images/link.png" /></a>
-                    <a href="javascript:;" target="_blank"><img src="images/link.png" /></a>
-                    <a href="javascript:;" target="_blank"><img src="images/link.png" /></a>
-                    <a href="javascript:;" target="_blank"><img src="images/link.png" /></a>
-                    <a href="javascript:;" target="_blank"><img src="images/link.png" /></a>
+                    <a href="javascript:; " target="_blank"><img src="images/link.png" /></a>
+                    <a href="javascript:; " target="_blank"><img src="images/link.png" /></a>
+                    <a href="javascript:; " target="_blank"><img src="images/link.png" /></a>
+                    <a href="javascript:; " target="_blank"><img src="images/link.png" /></a>
+                    <a href="javascript:; " target="_blank"><img src="images/link.png" /></a>
                 </div>
             </div>
             <div class="copyright">
@@ -403,9 +900,10 @@
     </footer>
 
     <script src="lib/jquery/jquery-2.1.4.min.js"></script>
-    <script src="js/jquery.SuperSlide.2.1.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/scrollfix-1.4.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/basic.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/My97DatePicker/WdatePicker.js " type="text/javascript " charset="utf-8"></script>
+    <script src="js/jquery.SuperSlide.2.1.js " type="text/javascript " charset="utf-8"></script>
+    <script src="js/scrollfix-1.4.js " type="text/javascript " charset="utf-8"></script>
+    <script src="js/basic.js " type="text/javascript " charset="utf-8"></script>
 </body>
 
 </html>

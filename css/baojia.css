@@ -97,14 +97,14 @@
 
 .baojia_list .baojia_list_con {
     height: 460px;
-    padding: 0 20px;
+    padding: 15px 40px 0 40px;
     overflow: auto;
     margin: 20px 0;
 }
 
 .baojia_list .switch {
     height: 42px;
-    padding: 0 35px;
+    padding: 0 45px;
     background: #EFEFEF;
     text-align: center;
 }
@@ -136,4 +136,183 @@
 
 .baojia_list .switch button {
     padding: 5px 100px;
+}
+
+.baojia_box {
+    overflow: auto;
+    margin-bottom: 50px;
+}
+
+.baojia_box:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+
+.baojia_box h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    float: left;
+}
+
+.baojia_box_con {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.baojia_box_con img {
+    width: auto;
+}
+
+.baojia_input span {
+    border: 1px solid #ccc;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 19px;
+    font-size: 12px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.baojia_input input {
+    width: 30px;
+    height: 24px;
+    text-align: center;
+    border: none;
+}
+
+.baojia_box_con p,
+.baojia_box_con li {
+    margin-bottom: 10px;
+}
+
+.baojia_riqi span {
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.baojia_riqi input {
+    border: none;
+    outline: none;
+}
+
+.baojia_riqi i,
+.baojia_riqi img {
+    cursor: pointer;
+}
+
+.baojia_box_con i {
+    color: #f60;
+}
+
+.baojia_riqi i {
+    color: #ccc;
+    margin: 2px 5px 0 0;
+}
+
+.baojia_checkbox input {
+    display: none;
+}
+
+.baojia_checkbox label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.baojia_checkbox label:after {
+    content: '√';
+    background: #00abd6;
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-30px);
+    transition: transform .2s ease-out;
+}
+
+.baojia_checkbox input:checked+label {
+    border-color: #00abd6;
+}
+
+.baojia_checkbox input:checked+label:after {
+    transform: translateY(0);
+    transition: transform .2s ease-in;
+}
+
+.baojia_radio input {
+    display: none;
+}
+
+.baojia_radio label {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.baojia_radio label:after {
+    content: ' ';
+    background: #00abd6;
+    color: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transform: scale(0);
+    transition: transform .2s ease-out;
+}
+
+.baojia_radio input:checked+label {
+    border-color: #00abd6;
+}
+
+.baojia_radio input:checked+label:after {
+    transform: scale(1);
+    transition: transform .2s ease-in;
+}
+
+.baojia_box_con li a {
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+
+.baojia_tjxl i {
+    width: 20px;
+    height: 18px;
+    background: #00abd6;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 18px;
+    font-style: normal;
+    margin-right: 5px;
+    border-radius: 4px;
 }
