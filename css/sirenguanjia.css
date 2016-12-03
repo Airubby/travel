@@ -1,0 +1,128 @@
+@charset "utf-8";
+.guanjia_img {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.guanjia_img_txt {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.guanjia_img_txt h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.guanjia_img_txt p {
+    line-height: 25px;
+}
+
+.guanjia_box {
+    text-align: center;
+    margin-bottom: 45px;
+    line-height: 25px;
+}
+
+.guanjia_box>div {
+    margin-bottom: 10px;
+}
+
+.guanjia_box img {
+    height: 450px;
+    margin-bottom: 30px;
+}
+
+.guanjia_box i {
+    font-style: normal;
+    color: #f60;
+}
+
+.guanjia_box .btn {
+    padding: 6px 28px;
+    border-radius: 20px;
+}
+
+.guanjia_box li {
+    margin: 40px 0 10px 0;
+}
+
+.guanjia_box .pic {
+    position: relative;
+    width: 100%;
+    height: 360px;
+}
+
+.guanjia_box .pic a img {
+    height: 360px;
+    display: block;
+}
+
+.guanjia_box li .pic .info {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.guanjia_box li .pic .info p:nth-of-type(1) {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.guanjia_box li .pic .info p:nth-of-type(2) {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.guanjia_box li .pic .info p:nth-of-type(2) img {
+    height: 22px;
+    margin-right: 2px;
+}
+
+.guanjia_box li .pic .info p span {
+    margin: 0 12px;
+}
+
+.guanjia_box li .title h3 {
+    color: #00abd6;
+    margin: 25px auto 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.guanjia_box li .title p {
+    font-size: 12px;
+    height: 60px;
+    line-height: 20px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.guanjia_box li .pic .info img {
+    width: auto;
+    margin: 0;
+}
+
+.guanjia_content {
+    width: 900px;
+    line-height: 35px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.guanjia_content img {
+    width: auto;
+    margin: 20px 0
+}

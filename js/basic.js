@@ -39,7 +39,10 @@
         $(this).click(function() {
             $("#baojia_bg").css("visibility", "hidden");
         })
-    })
+    });
+    //私人管家
+    var guanjia_img = $(window).height() - $("#header").height();
+    $(".guanjia_img img").css("height", guanjia_img);
 
 
 })();
