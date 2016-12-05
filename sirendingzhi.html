@@ -8,7 +8,7 @@
     <title>Template</title>
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/basic.css" />
-    <link rel="stylesheet" type="text/css" href="css/sirenguanjia.css" />
+    <link rel="stylesheet" type="text/css" href="css/others.css" />
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -218,196 +218,148 @@
         </nav>
     </header>
 
-    <div class="guanjia">
-        <div class="guanjia_img">
-            <img src="images/banner1.jpg" alt="">
-            <div class="guanjia_img_txt">
-                <h2>孕妈妈的新西兰蜜月旅行－定制旅行</h2>
-                <p>15岁时就被某人拐骗成了早恋的坏孩子，一直到27岁时才为我穿上婚纱。<br> 满心喜悦的期待着等了12年的蜜月，却在出发前意外发现小宝宝的来临。
-                    <br> 家人、朋友、还有某人，都劝我别去了，
-                    <br>哼，我偏要去玩个大的！
-                </p>
+    <div class="dingzhi">
+        <div class="content dingzhi_content">
+            <div class="dingzhi_left">
+                <div class="dingzhi_title">
+                    <h2>定制我的行程</h2>
+                    <i>您的行程交给我们</i>
+                    <a href="javascript:;" class="dingzhi_login" id="btn_baojia">
+                        快速提交需求
+                    </a>
+                </div>
+                <form class="dingzhi_con">
+                    <ul>
+                        <li>
+                            <i class="cfcs"></i>
+                            <div>
+                                <strong>出发城市</strong>
+                                <input type="text" name="cfcs" value="" placeholder="请输入出发城市">
+                            </div>
+                        </li>
+                        <li>
+                            <i class="xqnl"></i>
+                            <div>
+                                <strong>想去哪里</strong>
+                                <input type="text" name="cfcs" value="" placeholder="请选择或者输入目的地">
+                            </div>
+                            <div class="xqnl_select">
+                                <h2>请选择您的目的地</h2>
+                                <div class="xqnl_select_con">
+                                    <a href="">喀纳斯</a>
+                                    <a href="">喀纳斯1</a>
+                                    <a href="">喀纳斯2</a>
+                                    <a href="">喀纳斯3</a>
+                                    <a href="">喀纳斯4</a>
+                                    <a href="">喀纳斯5</a>
+                                    <a href="">喀纳斯6</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="cfrq"></i>
+                            <div>
+                                <strong>出发日期</strong>
+                                <div class="label_select">
+                                    <label>
+                                        <span>已确定出发日期</span>
+                                        <em class="caret"></em>
+                                    </label>
+                                    <ul>
+                                        <li class="active" data-type="1">已经确定出行日期</li>
+                                        <li data-type="2">已经确定出行月份</li>
+                                        <li data-type="3">暂未确定出行月份</li>
+                                    </ul>
+                                </div>
+                                <input type="text" id="cfrq" name="cfrq" value="" class="select_date" placeholder="请选择出发日期">
+                                <img onclick="WdatePicker({el:'cfrq'})" src="lib/My97DatePicker/skin/datePicker.gif" width="20" height="26" align="absmiddle" class="date_img">
+                            </div>
+                        </li>
+                        <li>
+                            <i class="lxts"></i>
+                            <div>
+                                <strong>旅行天数</strong>
+                                <input type="text" name="lxts" value="" placeholder="请输入旅行天数"><span>根据您的需求填写出行天数</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="cxrs"></i>
+                            <div>
+                                <strong>出行人数</strong>
+                                <input type="text" name="cxrs" value="" placeholder="请输入出行人数"><span>根据您的需求填写出行人数</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="rjys"></i>
+                            <div>
+                                <strong>人均预算</strong>
+                                <input type="text" name="rjys" value="" placeholder="选填；人均预算"><span class="price">元/人</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="beizhu"></i>
+                            <div>
+                                <strong>旅游备注</strong>
+                                <textarea rows="" cols="" placeholder="选填；可输入您对于酒店、用车、景点、联系时间的更多需求"></textarea>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="dingzhi_ok">OK,提交旅行需求</a>
+                </form>
+            </div>
+            <div class="dingzhi_right">
+                <img src="images/dingzhi.jpg" alt="">
             </div>
         </div>
-        <div class="content">
-            <div class="guanjia_box">
-                <a href="sirenguanjia_content.html" target="_blank" class="scale"><img src="images/guanjia.jpg" alt=""></a>
-                <div>
-                    15岁时就被某人拐骗成了早恋的坏孩子，一直到27岁时才为我穿上婚纱。<br> 满心喜悦的期待着等了12年的蜜月，却在出发前意外发现小宝宝的来临。
-                    <br> 家人、朋友、还有某人，都劝我别去了，
-                    <br> 哼，我偏要去玩个大的！
-                    <br>
+        <div class="dingzhi_bg" id="baojia_bg">
+            <div class="dingzhi_bg_con">
+                <a href="javascript:;" class="baojia_close dingzhi_close"><i>×</i></a>
+                <div class="dingzhi_title">
+                    <h2>亲，只差一步</h2>
+                    <i>定制师傅在8分钟内与您联系</i>
                 </div>
-                <div>旅行总花费：<i>33500 RMB/人</i></div>
-                <a href="sirenguanjia_content.html" target="_blank" class="btn btn-info">感受他们的温暖</a>
-            </div>
-            <div class="guanjia_box">
-                <a href="sirenguanjia_content.html" target="_blank" class="scale"><img src="images/guanjia.jpg" alt=""></a>
-                <div>
-                    15岁时就被某人拐骗成了早恋的坏孩子，一直到27岁时才为我穿上婚纱。<br> 满心喜悦的期待着等了12年的蜜月，却在出发前意外发现小宝宝的来临。
-                    <br> 家人、朋友、还有某人，都劝我别去了，
-                    <br> 哼，我偏要去玩个大的！
-                    <br>
-                </div>
-                <div>旅行总花费：<i>33500 RMB/人</i></div>
-                <a href="sirenguanjia_content.html" target="_blank" class="btn btn-info">感受他们的温暖</a>
-            </div>
-            <div class="guanjia_box">
-                <a href="sirenguanjia_content.html" target="_blank" class="scale"><img src="images/guanjia.jpg" alt=""></a>
-                <div>
-                    15岁时就被某人拐骗成了早恋的坏孩子，一直到27岁时才为我穿上婚纱。<br> 满心喜悦的期待着等了12年的蜜月，却在出发前意外发现小宝宝的来临。
-                    <br> 家人、朋友、还有某人，都劝我别去了，
-                    <br> 哼，我偏要去玩个大的！
-                    <br>
-                </div>
-                <div>旅行总花费：<i>33500 RMB/人</i></div>
-                <a href="sirenguanjia_content.html" target="_blank" class="btn btn-info">感受他们的温暖</a>
-            </div>
-            <div class="guanjia_box">
-                <a href="sirenguanjia_content.html" target="_blank" class="scale"><img src="images/guanjia.jpg" alt=""></a>
-                <div>
-                    15岁时就被某人拐骗成了早恋的坏孩子，一直到27岁时才为我穿上婚纱。<br> 满心喜悦的期待着等了12年的蜜月，却在出发前意外发现小宝宝的来临。
-                    <br> 家人、朋友、还有某人，都劝我别去了，
-                    <br> 哼，我偏要去玩个大的！
-                    <br>
-                </div>
-                <div>旅行总花费：<i>33500 RMB/人</i></div>
-                <a href="sirenguanjia_content.html" target="_blank" class="btn btn-info">感受他们的温暖</a>
-            </div>
-            <div class="guanjia_box">
-                <a href="sirenguanjia_content.html" target="_blank" class="scale"><img src="images/guanjia.jpg" alt=""></a>
-                <div>
-                    15岁时就被某人拐骗成了早恋的坏孩子，一直到27岁时才为我穿上婚纱。<br> 满心喜悦的期待着等了12年的蜜月，却在出发前意外发现小宝宝的来临。
-                    <br> 家人、朋友、还有某人，都劝我别去了，
-                    <br> 哼，我偏要去玩个大的！
-                    <br>
-                </div>
-                <div>旅行总花费：<i>33500 RMB/人</i></div>
-                <a href="sirenguanjia_content.html" target="_blank" class="btn btn-info">感受他们的温暖</a>
-            </div>
-            <div class="guanjia_box">
-                <ul class="row">
-                    <li class="col-md-4">
-                        <div class="pic">
-                            <a href="sirenguanjia_content.html" target="_blank" class="scale">
-                                <img src="images/img3.jpg" />
-                            </a>
-                            <div class="info">
-                                <p>喀纳斯</p>
-                                <p>
-                                    <span><img src="images/rili.png"/>8天</span>
-                                    <span><img src="images/renshu.png"/>12人</span>
-                                </p>
+                <form class="dingzhi_con">
+                    <ul>
+                        <li>
+                            <i class="xingming"></i>
+                            <div>
+                                <strong>您的姓名</strong>
+                                <input type="text" name="xingming" value="" placeholder="请输入您的姓名">
                             </div>
-                        </div>
-                        <div class="title">
-                            <a href="sirenguanjia_content.html" target="_blank" class="scale">
-                                <h3>旅行总花费：28550元/人</h3>
-                                <p>“指环王里称这片土地为中土世界，来过的人说它是世界上最后一片净土，当我站在Eden Mountain，从山顶看着奥克兰，我就信了，多谢无二之旅告诉我这个地方，犹如梦中” By 安小乔</p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="col-md-4">
-                        <div class="pic">
-                            <a href="sirenguanjia_content.html" target="_blank" class="scale">
-                                <img src="images/img3.jpg" />
-                            </a>
-                            <div class="info">
-                                <p>喀纳斯</p>
-                                <p>
-                                    <span><img src="images/rili.png"/>8天</span>
-                                    <span><img src="images/renshu.png"/>12人</span>
-                                </p>
+                        </li>
+                        <li>
+                            <i class="shouji"></i>
+                            <div>
+                                <strong>您的手机</strong>
+                                <input type="text" name="shouji" value="" placeholder="请输入您的手机号">
                             </div>
-                        </div>
-                        <div class="title">
-                            <a href="sirenguanjia_content.html" target="_blank" class="scale">
-                                <h3>旅行总花费：28550元/人</h3>
-                                <p>“指环王里称这片土地为中土世界，来过的人说它是世界上最后一片净土，当我站在Eden Mountain，从山顶看着奥克兰，我就信了，多谢无二之旅告诉我这个地方，犹如梦中” By 安小乔</p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="col-md-4">
-                        <div class="pic">
-                            <a href="sirenguanjia_content.html" target="_blank" class="scale">
-                                <img src="images/img3.jpg" />
-                            </a>
-                            <div class="info">
-                                <p>喀纳斯</p>
-                                <p>
-                                    <span><img src="images/rili.png"/>8天</span>
-                                    <span><img src="images/renshu.png"/>12人</span>
-                                </p>
+                        </li>
+                        <li>
+                            <i class="yzm"></i>
+                            <div>
+                                <strong>验证码</strong>
+                                <input type="text" name="cfcs" value="" placeholder="请输入验证码">
                             </div>
-                        </div>
-                        <div class="title">
-                            <a href="sirenguanjia_content.html" target="_blank" class="scale">
-                                <h3>旅行总花费：28550元/人</h3>
-                                <p>“指环王里称这片土地为中土世界，来过的人说它是世界上最后一片净土，当我站在Eden Mountain，从山顶看着奥克兰，我就信了，多谢无二之旅告诉我这个地方，犹如梦中” By 安小乔</p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="col-md-4">
-                        <div class="pic">
-                            <a href="sirenguanjia_content.html" target="_blank" class="scale">
-                                <img src="images/img3.jpg" />
-                            </a>
-                            <div class="info">
-                                <p>喀纳斯</p>
-                                <p>
-                                    <span><img src="images/rili.png"/>8天</span>
-                                    <span><img src="images/renshu.png"/>12人</span>
-                                </p>
+                        </li>
+                        <li>
+                            <i class="email"></i>
+                            <div>
+                                <strong>邮箱</strong>
+                                <input type="text" name="email" value="" placeholder="选填，您的邮箱">
                             </div>
-                        </div>
-                        <div class="title">
-                            <a href="sirenguanjia_content.html" target="_blank" class="scale">
-                                <h3>旅行总花费：28550元/人</h3>
-                                <p>“指环王里称这片土地为中土世界，来过的人说它是世界上最后一片净土，当我站在Eden Mountain，从山顶看着奥克兰，我就信了，多谢无二之旅告诉我这个地方，犹如梦中” By 安小乔</p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="col-md-4">
-                        <div class="pic">
-                            <a href="sirenguanjia_content.html" target="_blank" class="scale">
-                                <img src="images/img3.jpg" />
-                            </a>
-                            <div class="info">
-                                <p>喀纳斯</p>
-                                <p>
-                                    <span><img src="images/rili.png"/>8天</span>
-                                    <span><img src="images/renshu.png"/>12人</span>
-                                </p>
+                        </li>
+                        <li>
+                            <i class="wechat"></i>
+                            <div>
+                                <strong>微信</strong>
+                                <input type="text" name="wechat" value="" placeholder="选填，您的微信号">
                             </div>
-                        </div>
-                        <div class="title">
-                            <a href="sirenguanjia_content.html" target="_blank" class="scale">
-                                <h3>旅行总花费：28550元/人</h3>
-                                <p>“指环王里称这片土地为中土世界，来过的人说它是世界上最后一片净土，当我站在Eden Mountain，从山顶看着奥克兰，我就信了，多谢无二之旅告诉我这个地方，犹如梦中” By 安小乔</p>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="col-md-4">
-                        <div class="pic">
-                            <a href="sirenguanjia_content.html" target="_blank" class="scale">
-                                <img src="images/img3.jpg" />
-                            </a>
-                            <div class="info">
-                                <p>喀纳斯</p>
-                                <p>
-                                    <span><img src="images/rili.png"/>8天</span>
-                                    <span><img src="images/renshu.png"/>12人</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="title">
-                            <a href="sirenguanjia_content.html" target="_blank" class="scale">
-                                <h3>旅行总花费：28550元/人</h3>
-                                <p>“指环王里称这片土地为中土世界，来过的人说它是世界上最后一片净土，当我站在Eden Mountain，从山顶看着奥克兰，我就信了，多谢无二之旅告诉我这个地方，犹如梦中” By 安小乔</p>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                        <li>&nbsp;</li>
+                    </ul>
+                    <p>* 21点后或法定节假日提交的定制需求，我们将在第二天或下一个工作日9点后同您联系 。</p>
+                    <a href="javascript:;" class="dingzhi_ok">OK!</a>
+                </form>
             </div>
         </div>
     </div>

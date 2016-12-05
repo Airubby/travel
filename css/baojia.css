@@ -77,24 +77,6 @@
     animation: turn 0.5s infinite 0s linear;
 }
 
-@-webkit-keyframes turn {
-    from {
-        -webkit-transform: rotate(0);
-    }
-    to {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes turn {
-    from {
-        transform: rotate(0);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 .baojia_list .baojia_list_con {
     height: 460px;
     padding: 15px 40px 0 40px;
