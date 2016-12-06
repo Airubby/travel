@@ -664,3 +664,19 @@ img {
         transform: rotate(360deg);
     }
 }
+
+
+/*简化头部*/
+
+.min_header {
+    border-bottom: 2px solid #00abd6;
+}
+
+.min_phone {
+    float: right;
+    margin-top: 48px;
+}
+
+.min_phone span {
+    color: #f60;
+}

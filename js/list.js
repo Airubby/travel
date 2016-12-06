@@ -79,29 +79,31 @@
         }
 
     }
-
-    for (var i = 0; i < num; i++) {
-        switch (i) {
-            case 0:
-                contChange(0, "zthd")
-                break;
-            case 1:
-                contChange(1, "cfcs")
-                break;
-            case 2:
-                contChange(2, "jscs")
-                break;
-            case 3:
-                contChange(3, "xcts")
-                break;
-            case 4:
-                contChange(4, "tjjd")
-                break;
-            case 5:
-                contChange(5, "xzfw")
-                break;
+    if ($(".cont").length > 0) {
+        for (var i = 0; i < num; i++) {
+            switch (i) {
+                case 0:
+                    contChange(0, "zthd")
+                    break;
+                case 1:
+                    contChange(1, "cfcs")
+                    break;
+                case 2:
+                    contChange(2, "jscs")
+                    break;
+                case 3:
+                    contChange(3, "xcts")
+                    break;
+                case 4:
+                    contChange(4, "tjjd")
+                    break;
+                case 5:
+                    contChange(5, "xzfw")
+                    break;
+            }
         }
     }
+
 
 
     showTwo.bind('DOMNodeInserted', function(e) {

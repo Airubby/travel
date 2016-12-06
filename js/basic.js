@@ -1,11 +1,14 @@
 (function() {
+    var header_height = $("#header").height();
+    var footer_height = $("#footer").height();
+    var body_height = $(window).height();
     //搜索
     var search_li = $(".search_text_list li");
     for (var i = 0; i < search_li.length; i++) {
         search_li[i].onclick = function() {
             $($(".search_data").get(0)).text($(this).text())
             $($(".search_data").get(0)).data("search", $(this).data("search"));
-            console.log($($(".search_data").get(0)).data("search"))
+            //console.log($($(".search_data").get(0)).data("search"))
         }
     }
     //导航 
@@ -43,6 +46,8 @@
     //私人管家
     var guanjia_img = $(window).height() - $("#header").height();
     $(".guanjia_img img").css("height", guanjia_img);
+    //注册登录
+
 
 
 })();
