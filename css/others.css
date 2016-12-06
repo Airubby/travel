@@ -285,10 +285,10 @@
 }
 
 .dingzhi_ok {
-    width: 200px;
-    height: 50px;
+    width: 186px;
+    height: 48px;
     text-align: center;
-    line-height: 50px;
+    line-height: 48px;
     background: #00abd6;
     color: #fff;
     display: block;
@@ -499,4 +499,205 @@
     border-radius: 5px;
     margin-top: 8px;
     background: #00ABD6;
+}
+
+
+/*个人中心*/
+
+.zhongxin {
+    padding: 20px 0 0 0;
+}
+
+.zhongxin_left {
+    width: 180px;
+    border: 1px solid #eee;
+    float: left;
+    border-radius: 5px 5px 0 0;
+}
+
+.zhongxin_left .title,
+.zhongxin_left .title a {
+    height: 40px;
+    line-height: 40px;
+    background: #00abd6;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 3px 3px 0 0;
+}
+
+.zhongxin_con {
+    padding: 20px;
+}
+
+.zhongxin_con li {
+    height: 35px;
+    line-height: 35px;
+}
+
+.zhongxin_con li i {
+    width: 4px;
+    height: 4px;
+    display: block;
+    background: #00abd6;
+    margin-right: 7px;
+    float: left;
+    margin-top: 17px;
+}
+
+.zhongxin_con li:hover a {
+    color: #00ABD6;
+}
+
+.zhongxin_right {
+    width: 1000px;
+    min-height: 800px;
+    float: right;
+}
+
+.zhongxin_right_top {
+    width: 100%;
+    border: 1px solid #eee;
+    height: 120px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.zhongxin_right_top>div {
+    float: left;
+}
+
+.zhongxin_right_top .top_img img {
+    width: 80px;
+    height: 80px;
+}
+
+.zhongxin_right_top .top_text {
+    padding: 15px 20px;
+    font-size: 18px;
+}
+
+.zhongxin_right_top .top_text p {
+    margin-bottom: 5px;
+}
+
+.zhongxin_right_top .top_text span {
+    color: #000;
+}
+
+.zhongxin_right_top .top_text strong {
+    color: #00abd6;
+    margin: 0 8px;
+}
+
+.zhongxin_right_top .top_text a {
+    font-size: 16px;
+}
+
+.zhongxin_right_top .top_text a:hover {
+    color: #00abd6;
+}
+
+.zhongxin_right_con {
+    padding: 20px 30px;
+    border: 1px solid #eee;
+    border-top: 2px solid #00abd6;
+}
+
+.zhongxin_right_con h2 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #00abd6;
+}
+
+.zhongxin_right_con .img img {
+    height: 200px;
+}
+
+.zhongxin_right_con .info a {
+    height: 40px;
+    display: block;
+    line-height: 20px;
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.zhongxin_right_con .info a:hover {
+    color: #00abd6;
+}
+
+.zhongxin_right_con .info p {
+    color: #999;
+    height: 60px;
+    line-height: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.zhongxin_right_con .info p.price {
+    font-size: 12px;
+}
+
+.zhongxin_right_con .info p.price span {
+    font-size: 18px;
+    color: #f60;
+}
+
+.zhongxin_xiugai {
+    width: 500px;
+}
+
+.zhongxin_right_conbox {
+    padding: 20px 30px 40px 30px;
+    border: 1px solid #eee;
+    border-top: 2px solid #ccc;
+}
+
+.gouwuche_con li {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 20px;
+}
+
+.gouwuche_con .img img {
+    height: 120px;
+}
+
+.gouwuche_con .text {
+    padding: 10px 0;
+}
+
+.gouwuche_con .text a {
+    height: 50px;
+    line-height: 25px;
+    font-size: 16px;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.gouwuche_con .text a:hover {
+    color: #00abd6;
+}
+
+.gouwuche_con .text span {
+    margin-right: 35px;
+    line-height: 30px;
+}
+
+.gouwuche_con .text span i {
+    color: #f60;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.gouwuche_con .textbtn {
+    text-align: center;
+}
+
+.gouwuche_con .textbtn a {
+    margin-top: 15px;
 }
