@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Template</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/basic.css" />
+    <link rel="stylesheet" type="text/css" href="css/others.css" />
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header id="header">
+        <div class="top">
+            <div class="content">
+                <div class="top_left">
+                    <a href="" target="_blank">登录</a> | <a href="" target="_blank">注册</a>
+                </div>
+                <div class="top_right">
+                    <div class="phone_code">
+                        手机版
+                        <p><img src="images/code.jpg" alt=""><span>扫描二维码 下载APP</span></p>
+                    </div>
+                    <div>
+                        tel：0991-1234567
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="content">
+                <div class="logo">
+                    <a href=""><img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="main_name">
+                    <a href="">首页</a>
+                    <a href="" class="active">新疆</a>
+                    <a href="">西藏</a>
+                    <a href="">甘肃</a>
+                    <a href="">青海</a>
+                    <a href="">宁夏</a>
+                </div>
+                <div class="search">
+                    <div class="search_left">
+                        <div class="search_text">
+                            <span data-search="bianhao" class="search_data">编号</span>
+                            <i class="caret"></i>
+                        </div>
+                        <div class="search_text_list">
+                            <ul>
+                                <li data-search="bianhao">编号</li>
+                                <li data-search="jingdian">景点</li>
+                                <li data-search="xianlu">线路</li>
+                                <li data-search="jiudian">酒店</li>
+                                <li data-search="jiaotong">交通</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search_input">
+                        <input type="text" name="" value="" placeholder="输入关键词">
+                        <button><i class="glyphicon glyphicon-search"></i></button>
+                        <div class="search_tuijian">
+                            <h2>热门推荐</h2>
+                            <div>
+                                <a href="">喀纳斯</a><a href="">喀纳斯</a><a href="">喀纳斯</a><a href="">喀纳斯</a>
+                                <a href="">喀纳斯</a><a href="">喀纳斯</a><a href="">喀纳斯</a><a href="">喀纳斯</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <nav id="nav">
+            <div class="content nav_content">
+                <div class="nav_pop">
+                    <div class="nav_wrapper_title">全部旅游目的地</div>
+                    <div id="nav_pop_wrapper">
+                        <div class="mod_cate">
+                            <div class="nav_pop_label">
+                                <dl>
+                                    <dt><span></span><a href="/tours?search=伊犁" target="_blank">伊犁</a></dt>
+                                    <dd>
+                                        <a href="/tours?search=特克斯" target="_blank">特克斯</a>
+                                        <a href="/tours?search=昭苏" target="_blank">昭苏</a>
+                                        <a href="/tours?search=赛湖" target="_blank">赛湖</a>
+                                        <a href="/tours?search=那拉提" target="_blank">那拉提</a>
+                                        <a href="/tours?search=巴音布鲁克" target="_blank">巴音布鲁克</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="mod_subcate">
+                                伊犁
+                            </div>
+                        </div>
+                        <div class="mod_cate">
+                            <div class="nav_pop_label">
+                                <dl>
+                                    <dt><span></span><a href="/tours?search=喀纳斯" target="_blank">喀纳斯</a></dt>
+                                    <dd>
+                                        <a href="/tours?search=禾木乡" target="_blank">禾木乡</a>
+                                        <a href="/tours?search=白哈巴村" target="_blank">白哈巴村</a>
+                                        <a href="/tours?search=白沙湖" target="_blank">白沙湖</a>
+                                        <a href="/tours?search=可可托海" target="_blank">可可托海</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="mod_subcate">
+                                喀纳斯
+                            </div>
+                        </div>
+                        <div class="mod_cate">
+                            <div class="nav_pop_label">
+                                <dl>
+                                    <dt><span></span><a href="/qianghuiyou.html" target="_blank">周边短线巴扎</a></dt>
+                                    <dd>
+                                        <a href="/tours?search=天池" target="_blank">天池</a>
+                                        <a href="/tours?search=吐鲁番" target="_blank">吐鲁番</a>
+                                        <a href="/tours?search=南山" target="_blank">南山</a>
+                                        <a href="/tours?search=大峡谷" target="_blank">大峡谷</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="mod_subcate">
+                                周边短线巴扎
+                            </div>
+                        </div>
+                        <div class="mod_cate">
+                            <div class="nav_pop_label">
+                                <dl>
+                                    <dt><span></span><a href="/tours?search=南疆" target="_blank">南疆</a></dt>
+                                    <dd>
+                                        <a href="/tours?search=喀什" target="_blank">喀什</a>
+                                        <a href="/tours?search=阿克苏" target="_blank">阿克苏</a>
+                                        <a href="/tours?search=库车" target="_blank">库车</a>
+                                        <a href="/tours?search=和田" target="_blank">和田</a>
+                                        <a href="/tours?search=库尔勒" target="_blank">库尔勒</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="mod_subcate">
+                                南疆
+                            </div>
+                        </div>
+                        <div class="mod_cate">
+                            <div class="nav_pop_label">
+                                <dl>
+                                    <dt><span></span><a href="/tours?search=丝路" target="_blank">丝路</a></dt>
+                                    <dd>
+                                        <a href="/tours?search=敦煌" target="_blank">敦煌</a>
+                                        <a href="/tours?search=张掖" target="_blank">张掖</a>
+                                        <a href="/tours?search=嘉峪关" target="_blank">嘉峪关</a>
+                                        <a href="/tours?search=西宁" target="_blank">西宁</a>
+                                        <a href="/tours?search=银川" target="_blank">银川</a>
+                                        <a href="/tours?search=西安" target="_blank">西安</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="mod_subcate">
+                                丝路
+                            </div>
+                        </div>
+                        <div class="mod_cate">
+                            <div class="nav_pop_label">
+                                <dl>
+                                    <dt><span></span><a href="http://xj.xinjiangtour.com/tours?search=" target="_blank">呼朋唤友</a></dt>
+                                    <dd>
+                                        <a href="http://xj.xinjiangtour.com/tours?search=" target="_blank">一场有温度的旅行</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="mod_subcate">
+                                呼朋唤友
+                            </div>
+                        </div>
+                        <div class="mod_cate">
+                            <div class="nav_pop_label">
+                                <dl>
+                                    <dt><span></span><a href="javascript:;" target="_blank">主题旅游</a></dt>
+                                    <dd>
+                                        <a href="/sheying.html" target="_blank">摄影</a>
+                                        <a href="/shanghua.html" target="_blank">赏花</a>
+                                        <a href="/dingzhi" target="_blank">私人定制</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="mod_subcate">
+                                主题旅游
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="nav_list">
+                    <ul>
+                        <li><a href="">新疆首页</a></li>
+                        <li><a href="">目的地</a></li>
+                        <li><a href="ziyou.html" class="active">自由行</a></li>
+                        <li><a href="sheying.html">摄影游</a></li>
+                        <li><a href="dingjia.html">自主定价</a></li>
+                        <li><a href="bijia.html">同类产品比价</a></li>
+                        <li><a href="dingzhi.html">私人定制</a></li>
+                        <li><a href="guanjia.html">私人管家</a></li>
+                        <li><a href="tonghang.html">同行人口</a></li>
+                        <li><a href="ditu.html">旅游地图</a></li>
+                        <li><a href="zhifu.html">在线支付</a></li>
+                        <li><a href="huwai.html">户外军团</a></li>
+                        <li><a href="zijia.html">自驾游</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bijia">
+        <div class="content">
+            <div class="bijia_con">
+                <div class="bijia_top">
+                    <h2>产品比价</h2>
+                    <a href="javascript:;" id="print">打印</a>
+                </div>
+                <!--标题信息-->
+                <div class="bijia_title">
+                    <div id="bijia_title">
+                        <div class="bijia_box1">
+                            标题
+                        </div>
+                        <div class="bijia_box2 bijia_box2_title">
+                            <p>
+                                <span>编号:526</span>
+                                <a href="javascript:;" class="close">×</a>
+                            </p>
+                            <a href="#" target="_blank" class="title">
+                                <经典巨环国家公园震撼之旅>拉斯维加斯+锡安国家公园+ 布莱斯峡 ..
+                            </a>
+                            <div>
+                                <a href="javascript:;" target="_blank" class="btn btn-warning">立即订购</a>
+                                <a href="javascript:;" target="_blank" class="cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</a>
+                            </div>
+                        </div>
+                        <div class="bijia_box2 bijia_box2_title">
+                            <p>
+                                <span>编号:526</span>
+                                <a href="javascript:;" class="close">×</a>
+                            </p>
+                            <a href="#" target="_blank" class="title">
+                                <经典巨环国家公园震撼之旅>拉斯维加斯+锡安国家公园+ 布莱斯峡 ..
+                            </a>
+                            <div>
+                                <a href="javascript:;" target="_blank" class="btn btn-warning">立即订购</a>
+                                <a href="javascript:;" target="_blank" class="cart"><i class="glyphicon glyphicon-shopping-cart"></i>加入购物车</a>
+                            </div>
+                        </div>
+                        <div class="bijia_box2 bijia_box2_title">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input class="form-control" type="text" placeholder="添加对比产品编号">
+                                </div>
+                                <button type="submit" class="btn btn-default">+</button>
+                            </div>
+                        </div>
+                        <div class="right_nav" id="right_nav">
+                            <ul>
+                                <li><a href="#jbxx" class="active">基本信息</a></li>
+                                <li><a href="#xcxx">行程信息</a></li>
+                                <li><a href="#jdxx">酒店信息</a></li>
+                                <li><a href="#fymx">费用明细</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--标题信息-->
+                <!--基本信息-->
+                <div class="bijia_body" id="jbxx">
+                    <h2><i class="glyphicon glyphicon-bookmark"></i>基本信息</h2>
+                    <div class="bijia_box">
+                        <div class="bijia_box1">
+                            价格
+                        </div>
+                        <div class="bijia_box2 text-center price">
+                            <strong>￥23423</strong>起/人
+                        </div>
+                        <div class="bijia_box2 text-center price">
+                            <strong>￥23423</strong>起/人
+                        </div>
+                        <div class="bijia_box2 text-center price">
+
+                        </div>
+                    </div>
+                    <div class="bijia_box">
+                        <div class="bijia_box1">
+                            天数
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            <strong>3</strong>天
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            <strong>3</strong>天
+                        </div>
+                        <div class="bijia_box2 text-center">
+
+                        </div>
+                    </div>
+                    <div class="bijia_box">
+                        <div class="bijia_box1">
+                            出发地
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            乌鲁木齐
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            乌鲁木齐
+                        </div>
+                        <div class="bijia_box2 text-center">
+
+                        </div>
+                    </div>
+                    <div class="bijia_box">
+                        <div class="bijia_box1">
+                            结束地
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            乌鲁木齐
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            乌鲁木齐
+                        </div>
+                        <div class="bijia_box2 text-center">
+
+                        </div>
+                    </div>
+                    <div class="bijia_box">
+                        <div class="bijia_box1">
+                            行程特色
+                        </div>
+                        <div class="bijia_box2 tese">
+                            从拉斯维加斯出发，一路游览美国经典国家公园，锡安国家公园、布莱斯峡谷、拱门国家公园、纪念碑山谷 、羚羊彩穴、格兰峡谷、马蹄湾、大峡谷国家公园，适合热爱摄影的人群。
+                        </div>
+                        <div class="bijia_box2 tese">
+                            从拉斯维加斯出发，一路游览美国经典国家公园，锡安国家公园、布莱斯峡谷、拱门国家公园、纪念碑山谷 、羚羊彩穴、格兰峡谷、马蹄湾、大峡谷国家公园，适合热爱摄影的人群。
+                        </div>
+                        <div class="bijia_box2 tese">
+
+                        </div>
+                    </div>
+                    <div class="bijia_box">
+                        <div class="bijia_box1">
+                            附加服务
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            接机参团
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            加订酒店
+                        </div>
+                        <div class="bijia_box2 text-center">
+
+                        </div>
+                    </div>
+                </div>
+                <!--基本信息-->
+                <!--行程信息-->
+                <div class="bijia_body" id="xcxx">
+                    <h2><i class="glyphicon glyphicon-bookmark"></i>行程信息</h2>
+                    <div class="bijia_box">
+                        <div class="bijia_box1">
+                            景点数量
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            12
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            16
+                        </div>
+                        <div class="bijia_box2 text-center">
+
+                        </div>
+                    </div>
+                    <div class="bijia_box">
+                        <div class="bijia_box1">
+                            D1
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            <p>拉斯维加斯</p>
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            <p>喀纳斯</p>
+                        </div>
+                        <div class="bijia_box2 text-center">
+
+                        </div>
+                    </div>
+                    <div class="bijia_box">
+                        <div class="bijia_box1">
+                            D2
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            <p>拉斯维加斯</p>
+                            <p>锡安国家公园</p>
+                            <p>拉斯维加斯</p>
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            <p>喀纳斯</p>
+                        </div>
+                        <div class="bijia_box2 text-center">
+
+                        </div>
+                    </div>
+                    <div class="bijia_box">
+                        <div class="bijia_box1">
+                            D3
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            <p>拉斯维加斯</p>
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            <p>喀纳斯</p>
+                            <p>锡安国家公园</p>
+                            <p>拉斯维加斯</p>
+                            <p>锡安国家公园</p>
+                            <p>拉斯维加斯</p>
+                        </div>
+                        <div class="bijia_box2 text-center">
+
+                        </div>
+                    </div>
+                </div>
+                <!--行程信息-->
+                <!--酒店信息-->
+                <div class="bijia_body" id="jdxx">
+                    <h2><i class="glyphicon glyphicon-bookmark"></i>酒店信息</h2>
+                    <div class="bijia_box">
+                        <div class="bijia_box1">
+                            D1
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            三星级
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            四星级
+                        </div>
+                        <div class="bijia_box2 text-center">
+
+                        </div>
+                    </div>
+                    <div class="bijia_box">
+                        <div class="bijia_box1">
+                            D2
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            四星级
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            三星级
+                        </div>
+                        <div class="bijia_box2 text-center">
+
+                        </div>
+                    </div>
+                    <div class="bijia_box">
+                        <div class="bijia_box1">
+                            D3
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            三星级
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            五星级
+                        </div>
+                        <div class="bijia_box2 text-center">
+
+                        </div>
+                    </div>
+                </div>
+                <!--酒店信息-->
+                <!--费用明细-->
+                <div class="bijia_body" id="fymx">
+                    <h2><i class="glyphicon glyphicon-bookmark"></i>费用明细</h2>
+                    <div class="bijia_box">
+                        <div class="bijia_box1">
+                            费用包含
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            六晚酒店住宿，私人卫浴，房间以两张床为主(儿童、第三、第四人同房，不另加床) 中、英文双语导游 豪华空调巴士 $500万美金巴士行车保险 含国家公园门票
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            出发城市至目的地城市极地巴士，专业当地司机 四晚萨利色尔卡小木屋双人间住宿（4­～8人一栋） 圣诞老人村，极地博物馆参观首道门票费用 优秀专业中文领队
+                        </div>
+                        <div class="bijia_box2 text-center">
+
+                        </div>
+                    </div>
+                    <div class="bijia_box">
+                        <div class="bijia_box1">
+                            费用不包含
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            餐费 私人费用(如电话、房间酒水、洗衣) 个人旅游健康保险 小费。导游及司机小费建议每人每天$7.00 南大峡谷必付自费项目(以现金形式，当天交由导游) 南大峡谷门票：$50/人(不包含午餐，英文讲解） 自选自费项目 (以现金形式，当天交由导游)(价格仅供参考) 羚羊彩穴：大人$58, 小孩(2-12岁) $48 包伟湖游船：成人$48 / 小孩 (2-12) $35 纪念碑山谷吉普车之旅 - 每人$45 (小孩2岁以下免费) 马蹄湾-每人$25 增值体验：路路行提供拉斯维加斯各大知名表演秀门票，查看购买请点击此处。
+                        </div>
+                        <div class="bijia_box2 text-center">
+                            司机导游小费4€/客人/天（以现金形式，当天交由导游） 早午晚餐 行程中的一切餐费，个人消费，签证费，机票等 升级入住双人标准间费用 40€/人 因不可抗力，罢工，天气因素，自然灾害等导致的额外费用 自选自费项目（请在订购时加选，游玩当天无法现场加购） 驯鹿农场+萨米文化 35€/人 三小时极光雪地摩托 100€/人 越野滑雪+拉普兰简餐 40 €/人 北冰洋之旅 65€/人 极光雪鞋徒步 49 €/人 哈士奇拉雪橇2.5km 75€/人 参观玻璃屋 35€/人 约1h （注：最少10人成团） 万塔机场接送机服务：50€/人/程，两人起订
+                            赫尔辛基市区四星级酒店舒适双人间 加定(70€/人/晚，两人起订) 仅限前后各加订一晚，需提前联系客服确认空房情况。
+                        </div>
+                        <div class="bijia_box2 text-center">
+
+                        </div>
+                    </div>
+                </div>
+                <!--费用明细-->
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="content">
+            <div class="site_link">
+                <h3>-友情链接-</h3>
+                <div class="site_link_con">
+                    <a href="javascript:; " target="_blank"><img src="images/link.png" /></a>
+                    <a href="javascript:; " target="_blank"><img src="images/link.png" /></a>
+                    <a href="javascript:; " target="_blank"><img src="images/link.png" /></a>
+                    <a href="javascript:; " target="_blank"><img src="images/link.png" /></a>
+                    <a href="javascript:; " target="_blank"><img src="images/link.png" /></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="logo">
+                    <a href="javascript:;"><img src="images/logo.png" /></a>
+                </div>
+                <div class="copyright_con">
+                    <p>Copyright©2006-2015 www.xinjiangtour.com | All rights reserved 新ICP备13003149号-1<span>联系电话：0991-12345678</span></p>
+                    <p>新疆中国国际旅行社有限责任公司<span>地址：中国新疆乌鲁木齐市人民东路33号</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lib/jquery/jquery-2.1.4.min.js"></script>
+    <script src="lib/My97DatePicker/WdatePicker.js " type="text/javascript " charset="utf-8"></script>
+    <script src="js/jquery.SuperSlide.2.1.js " type="text/javascript " charset="utf-8"></script>
+    <script src="js/scrollfix-1.4.js " type="text/javascript " charset="utf-8"></script>
+    <script src="js/basic.js " type="text/javascript " charset="utf-8"></script>
+    <script src="js/bijia.js " type="text/javascript " charset="utf-8"></script>
+</body>
+
+</html>

@@ -44,9 +44,8 @@
         })
     });
     //私人管家
-    var guanjia_img = $(window).height() - $("#header").height();
+    var guanjia_img = body_height - header_height;
     $(".guanjia_img img").css("height", guanjia_img);
-    //注册登录
 
 
 

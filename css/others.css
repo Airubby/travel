@@ -701,3 +701,203 @@
 .gouwuche_con .textbtn a {
     margin-top: 15px;
 }
+
+
+/*比价*/
+
+.bijia_con {
+    width: 1100px;
+    border: 1px solid #ccc;
+    margin: 20px 0 30px 0;
+    border-top: 4px solid #ff3573;
+}
+
+.bijia_top {
+    height: 50px;
+    padding: 13px 20px;
+    line-height: 24px;
+    border-bottom: 1px solid #ccc;
+}
+
+.bijia_top h2 {
+    font-size: 18px;
+    color: #222;
+    float: left;
+    line-height: 24px;
+}
+
+.bijia_top a {
+    float: right;
+    padding-left: 24px;
+    background: url(../images/icon.png) no-repeat -290px 0;
+}
+
+.bijia_top a:hover {
+    color: #00ABD6;
+    background-position: -290px -24px;
+}
+
+.bijia_title,
+#bijia_title {
+    border-bottom: 1px solid #ccc;
+    background: #F1FAFD;
+    position: relative;
+    height: 130px;
+    z-index: 9;
+}
+
+.right_nav {
+    position: absolute;
+    width: 100px;
+    background: #00abd6;
+    right: -100px;
+    top: 130px;
+    text-align: center;
+}
+
+.right_nav a {
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 0;
+    display: block;
+}
+
+.right_nav a.active,
+.right_nav a:hover {
+    background: #F8B417;
+}
+
+.right_nav li a.active:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #F8B417;
+}
+
+.right_nav li:nth-of-type(1) a.active:before {
+    top: 10px;
+}
+
+.right_nav li:nth-of-type(2) a.active:before {
+    top: 50px;
+}
+
+.right_nav li:nth-of-type(3) a.active:before {
+    top: 90px;
+}
+
+.right_nav li:nth-of-type(4) a.active:before {
+    top: 130px;
+}
+
+.bijia_box1 {
+    width: 93px;
+    float: left;
+    padding: 15px;
+}
+
+.bijia_box2 {
+    width: 335px;
+    float: left;
+    padding: 10px;
+    min-height: 50px;
+    line-height: 30px;
+    border-left: 1px solid #eee;
+}
+
+.bijia_box2_title {
+    height: 130px;
+}
+
+.bijia_box2_title p {
+    height: 25px;
+    line-height: 25px;
+}
+
+.bijia_box2_title .title {
+    height: 40px;
+    line-height: 20px;
+    display: block;
+    overflow: hidden;
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.bijia_box2_title .title:hover {
+    color: #00ABD6;
+}
+
+.bijia_box2_title div {
+    height: 35px;
+    line-height: 35px;
+}
+
+.bijia_box2_title .cart {
+    float: right;
+    margin-left: 20px;
+}
+
+.bijia_box2_title .cart:hover {
+    color: #00ABD6;
+}
+
+.bijia_box2_title .form-group {
+    margin: 30px 0 0 45px;
+}
+
+.bijia_box2_title .input-group {
+    float: left;
+}
+
+.bijia_box2_title .btn-default {
+    float: left;
+}
+
+.bijia_body>h2 {
+    height: 50px;
+    font-size: 16px;
+    color: #00ABD6;
+    line-height: 30px;
+    padding: 10px 15px;
+    border-bottom: 3px solid #F1F1F1;
+}
+
+.bijia_body>h2 .glyphicon {
+    margin: 2px 5px 0 0;
+}
+
+.bijia_box {
+    height: auto;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+
+.bijia_box .price {
+    font-size: 12px;
+    height: 55px;
+    line-height: 35px;
+}
+
+.bijia_box .price strong {
+    font-size: 24px;
+    color: #f60;
+    font-weight: normal;
+}
+
+.bijia_box:hover {
+    background: #F9F9F9;
+}
+
+.bijia_box .tese {
+    height: 120px;
+    overflow: hidden;
+    line-height: 20px;
+}
+
+.bijia_box p {
+    line-height: 24px;
+}
