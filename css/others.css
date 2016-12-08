@@ -901,3 +901,72 @@
 .bijia_box p {
     line-height: 24px;
 }
+
+
+/*订单提交*/
+
+.yuding_box {
+    padding: 0 50px;
+}
+
+.yuding_box img {
+    width: auto;
+}
+
+.yuding_box li {
+    margin-bottom: 15px;
+}
+
+.yuding_box li a {
+    color: #00abd6;
+}
+
+.yuding_box li input {
+    outline: none;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+    padding: 2px 8px;
+}
+
+.yuding_box label {
+    float: left;
+    margin-right: 7px;
+    font-weight: normal;
+    width: 90px;
+    text-align: right;
+}
+
+.yuding_box label em {
+    color: #f60;
+    font-style: normal;
+    margin-right: 5px;
+}
+
+.yuding_box .je_span {
+    margin-left: 30px;
+}
+
+.yuding_box .je_span em {
+    color: #f60;
+    font-style: normal;
+}
+
+.yuding_box {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.yuding_box textarea {
+    width: 740px;
+    height: 120px;
+    resize: none;
+    padding: 15px;
+    line-height: 22px;
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+.yuding .submit {
+    width: 120px;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Template</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/basic.css" />
+    <link rel="stylesheet" type="text/css" href="css/others.css" />
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header id="header">
+        <div class="center min_header">
+            <div class="content">
+                <div class="logo">
+                    <a href=""><img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="min_phone">
+                    客服热线：<span>0991-1234567</span>(7x24H)
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content zhongxin">
+        <div class="zhongxin_left">
+            <div class="title">
+                <a href="zhongxin.html">结算信息</a>
+            </div>
+            <div class="zhongxin_con">
+                <ul>
+                    <li>
+                        线路单价：<span>1254元</span>
+                    </li>
+                    <li>
+                        预订人数：<span>5人</span>
+                    </li>
+                    <li>
+                        线路总价：<span>234434元</span>
+                    </li>
+                    <li>
+                        预付金额：<span>12321元</span>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="zhongxin_right">
+            <div class="zhongxin_right_con zhongxin_right_conbox">
+                <form>
+
+                    <h2>线路信息</h2>
+                    <div class="yuding_box">
+                        <ul>
+                            <li>
+                                <label><em>&nbsp; </em>线路名称：</label>
+                                <a href="#" target="_blank">金牌壹号：可可托海、喀纳斯、禾木单飞单卧5日游</a>
+                            </li>
+                            <li>
+                                <label><em>*</em>出发日期：</label>
+                                <input type="text" name="" value="" id="ddtj">
+                                <img onclick="WdatePicker({el:'ddtj'})" src="lib/My97DatePicker/skin/datePicker.gif" width="20" height="26" align="absmiddle"></span>
+                            </li>
+                            <li>
+                                <label><em>*</em>预订人数：</label>
+                                <input type="text" name="" value="">人
+                            </li>
+                            <li>
+                                <label><em>*</em>预付金额：</label>
+                                <input type="text" name="" value="">元<span class="je_span">预付金额 = 订单金额<em>(单价*人数)</em> * 预付款比例<em>(30%)</em></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <h2>联系人信息</h2>
+                    <div class="yuding_box">
+                        <ul>
+                            <li>
+                                <label><em>*</em>称呼：</label>
+                                <input type="text" name="name" value="" placeholder="怎么称呼您">
+                            </li>
+                            <li>
+                                <label><em>*</em>手机：</label>
+                                <input type="text" name="phone" value="" placeholder="您的手机号"><span><a href="javascript:;">获取验证码</a></span>
+                            </li>
+                            <li>
+                                <label><em>*</em>验证码：</label>
+                                <input type="text" name="phone" value="" placeholder="手机验证码">
+                            </li>
+                            <li>
+                                <label><em>*</em>座机：</label>
+                                <input type="text" name="dianhua" value="" placeholder="您的座机号">
+                            </li>
+                            <li>
+                                <label><em>*</em>邮箱：</label>
+                                <input type="text" name="email" value="" placeholder="您的邮箱">
+                            </li>
+                        </ul>
+                    </div>
+                    <h2>订单备注信息</h2>
+                    <div class="yuding_box">
+                        <ul>
+                            <li>
+                                <label>备注信息：</label>
+                                <textarea rows="" cols="" placeholder="如您有任何特殊的要求,欢迎详细填写.我们将尽快为您跟进。"></textarea>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="yuding text-center">
+                        <input id="submits" type="submit" class="submit btn btn-info" value="提交订单">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="content">
+            <div class="copyright">
+                <div class="logo">
+                    <a href="javascript:;"><img src="images/logo.png" /></a>
+                </div>
+                <div class="copyright_con">
+                    <p>Copyright©2006-2015 www.xinjiangtour.com | All rights reserved 新ICP备13003149号-1<span>联系电话：0991-12345678</span></p>
+                    <p>新疆中国国际旅行社有限责任公司<span>地址：中国新疆乌鲁木齐市人民东路33号</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lib/jquery/jquery-2.1.4.min.js"></script>
+    <script src="lib/My97DatePicker/WdatePicker.js " type="text/javascript " charset="utf-8"></script>
+    <script src="js/jquery.SuperSlide.2.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/scrollfix-1.4.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/basic.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/list.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
