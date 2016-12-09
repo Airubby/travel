@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Template</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/basic.css" />
+    <link rel="stylesheet" type="text/css" href="css/others.css" />
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header id="header">
+        <div class="top">
+            <div class="content">
+                <div class="top_left">
+                    <a href="" target="_blank">登录</a> | <a href="" target="_blank">注册</a>
+                </div>
+                <div class="top_right">
+                    <div class="phone_code">
+                        手机版
+                        <p><img src="images/code.jpg" alt=""><span>扫描二维码 下载APP</span></p>
+                    </div>
+                    <div>
+                        tel：0991-1234567
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="content">
+                <div class="logo">
+                    <a href=""><img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="main_name">
+                    <a href="">首页</a>
+                    <a href="" class="active">新疆</a>
+                    <a href="">西藏</a>
+                    <a href="">甘肃</a>
+                    <a href="">青海</a>
+                    <a href="">宁夏</a>
+                </div>
+                <div class="search">
+                    <div class="search_left">
+                        <div class="search_text">
+                            <span data-search="bianhao" class="search_data">编号</span>
+                            <i class="caret"></i>
+                        </div>
+                        <div class="search_text_list">
+                            <ul>
+                                <li data-search="bianhao">编号</li>
+                                <li data-search="jingdian">景点</li>
+                                <li data-search="xianlu">线路</li>
+                                <li data-search="jiudian">酒店</li>
+                                <li data-search="jiaotong">交通</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search_input">
+                        <input type="text" name="" value="" placeholder="输入关键词">
+                        <button><i class="glyphicon glyphicon-search"></i></button>
+                        <div class="search_tuijian">
+                            <h2>热门推荐</h2>
+                            <div>
+                                <a href="">喀纳斯</a><a href="">喀纳斯</a><a href="">喀纳斯</a><a href="">喀纳斯</a>
+                                <a href="">喀纳斯</a><a href="">喀纳斯</a><a href="">喀纳斯</a><a href="">喀纳斯</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <nav id="nav">
+            <div class="content nav_content">
+                <div class="nav_pop">
+                    <div class="nav_wrapper_title">全部旅游目的地</div>
+                    <div id="nav_pop_wrapper">
+                        <div class="mod_cate">
+                            <div class="nav_pop_label">
+                                <dl>
+                                    <dt><span></span><a href="/tours?search=伊犁" target="_blank">伊犁</a></dt>
+                                    <dd>
+                                        <a href="/tours?search=特克斯" target="_blank">特克斯</a>
+                                        <a href="/tours?search=昭苏" target="_blank">昭苏</a>
+                                        <a href="/tours?search=赛湖" target="_blank">赛湖</a>
+                                        <a href="/tours?search=那拉提" target="_blank">那拉提</a>
+                                        <a href="/tours?search=巴音布鲁克" target="_blank">巴音布鲁克</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="mod_subcate">
+                                伊犁
+                            </div>
+                        </div>
+                        <div class="mod_cate">
+                            <div class="nav_pop_label">
+                                <dl>
+                                    <dt><span></span><a href="/tours?search=喀纳斯" target="_blank">喀纳斯</a></dt>
+                                    <dd>
+                                        <a href="/tours?search=禾木乡" target="_blank">禾木乡</a>
+                                        <a href="/tours?search=白哈巴村" target="_blank">白哈巴村</a>
+                                        <a href="/tours?search=白沙湖" target="_blank">白沙湖</a>
+                                        <a href="/tours?search=可可托海" target="_blank">可可托海</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="mod_subcate">
+                                喀纳斯
+                            </div>
+                        </div>
+                        <div class="mod_cate">
+                            <div class="nav_pop_label">
+                                <dl>
+                                    <dt><span></span><a href="/qianghuiyou.html" target="_blank">周边短线巴扎</a></dt>
+                                    <dd>
+                                        <a href="/tours?search=天池" target="_blank">天池</a>
+                                        <a href="/tours?search=吐鲁番" target="_blank">吐鲁番</a>
+                                        <a href="/tours?search=南山" target="_blank">南山</a>
+                                        <a href="/tours?search=大峡谷" target="_blank">大峡谷</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="mod_subcate">
+                                周边短线巴扎
+                            </div>
+                        </div>
+                        <div class="mod_cate">
+                            <div class="nav_pop_label">
+                                <dl>
+                                    <dt><span></span><a href="/tours?search=南疆" target="_blank">南疆</a></dt>
+                                    <dd>
+                                        <a href="/tours?search=喀什" target="_blank">喀什</a>
+                                        <a href="/tours?search=阿克苏" target="_blank">阿克苏</a>
+                                        <a href="/tours?search=库车" target="_blank">库车</a>
+                                        <a href="/tours?search=和田" target="_blank">和田</a>
+                                        <a href="/tours?search=库尔勒" target="_blank">库尔勒</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="mod_subcate">
+                                南疆
+                            </div>
+                        </div>
+                        <div class="mod_cate">
+                            <div class="nav_pop_label">
+                                <dl>
+                                    <dt><span></span><a href="/tours?search=丝路" target="_blank">丝路</a></dt>
+                                    <dd>
+                                        <a href="/tours?search=敦煌" target="_blank">敦煌</a>
+                                        <a href="/tours?search=张掖" target="_blank">张掖</a>
+                                        <a href="/tours?search=嘉峪关" target="_blank">嘉峪关</a>
+                                        <a href="/tours?search=西宁" target="_blank">西宁</a>
+                                        <a href="/tours?search=银川" target="_blank">银川</a>
+                                        <a href="/tours?search=西安" target="_blank">西安</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="mod_subcate">
+                                丝路
+                            </div>
+                        </div>
+                        <div class="mod_cate">
+                            <div class="nav_pop_label">
+                                <dl>
+                                    <dt><span></span><a href="http://xj.xinjiangtour.com/tours?search=" target="_blank">呼朋唤友</a></dt>
+                                    <dd>
+                                        <a href="http://xj.xinjiangtour.com/tours?search=" target="_blank">一场有温度的旅行</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="mod_subcate">
+                                呼朋唤友
+                            </div>
+                        </div>
+                        <div class="mod_cate">
+                            <div class="nav_pop_label">
+                                <dl>
+                                    <dt><span></span><a href="javascript:;" target="_blank">主题旅游</a></dt>
+                                    <dd>
+                                        <a href="/sheying.html" target="_blank">摄影</a>
+                                        <a href="/shanghua.html" target="_blank">赏花</a>
+                                        <a href="/dingzhi" target="_blank">私人定制</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="mod_subcate">
+                                主题旅游
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="nav_list">
+                    <ul>
+                        <li><a href="">新疆首页</a></li>
+                        <li><a href="">目的地</a></li>
+                        <li><a href="ziyou.html" class="active">自由行</a></li>
+                        <li><a href="sheying.html">摄影游</a></li>
+                        <li><a href="dingjia.html">自主定价</a></li>
+                        <li><a href="bijia.html">同类产品比价</a></li>
+                        <li><a href="dingzhi.html">私人定制</a></li>
+                        <li><a href="guanjia.html">私人管家</a></li>
+                        <li><a href="tonghang.html">同行人口</a></li>
+                        <li><a href="ditu.html">旅游地图</a></li>
+                        <li><a href="zhifu.html">在线支付</a></li>
+                        <li><a href="huwai.html">户外军团</a></li>
+                        <li><a href="zijia.html">自驾游</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content_bg">
+        <div class="content content_con">
+            <div class="content_con_addres">
+                <i class="glyphicon glyphicon-home"></i>您现在的位置：<a href="index.html">首页</a>><a href="" target="_blank">新疆旅游线路</a>>><a href="" target="_blank">冬日精灵：天鹅泉、赛湖、口岸、沙漠、大峡谷摄影8日</a>
+            </div>
+            <!--top-->
+            <div class="content_con_top">
+                <div class="content_con_topbox">
+                    <div class="content_con_img index_slide">
+                        <div class="bd">
+                            <ul>
+                                <li>
+                                    <a href="javascript:;" target="_blank"><img src="images/banner1.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" target="_blank"><img src="images/dz5.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" target="_blank"><img src="images/dz4.jpg" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content_con_text">
+                        <ul>
+                            <li>
+                                冬日精灵：天鹅泉、赛湖、口岸、沙漠、大峡谷摄影8日
+                            </li>
+                            <li>
+                                <label>线路价格：</label><i>￥</i><strong>36565</strong>元
+                            </li>
+                            <li>
+                                <label>线路编号：</label>895
+                            </li>
+                            <li>
+                                <label>行程天数：</label>8天
+                            </li>
+                            <li>
+                                <label>出发城市：</label>乌鲁木齐
+                            </li>
+                            <li>
+                                <label>结束城市：</label>乌鲁木齐
+                            </li>
+                            <li>
+                                <label>咨询热线：</label><span>0991-4509666</span><span>0991-4811555</span>
+                            </li>
+                            <li>
+                                <span>
+                                    <a href="#" class="btn btn-primary">在线咨询<em class="glyphicon glyphicon-comment"></em></a>
+                                </span>
+                                <span>
+                                    <a href="#" class="btn btn-warning">立即预订<em class="glyphicon glyphicon-check"></em></a>
+                                </span>
+                                <span>
+                                    <a href="#" class="btn btn-info">付款方式<em class="glyphicon glyphicon-list-alt"></em></a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content_con_topbox">
+                    <div class="content_con_rili">
+                        日历信息
+                    </div>
+                    <div class="content_con_tuijian">
+                        <h2>推荐理由</h2>
+                        <div class="content_con_tuijianbox">
+                            品名：赛湖、天鹅泉、大峡谷、沙漠、口岸8日； 保质期：2016.12.18-2016.4.8； 主要成分：赛里木湖、霍尔果斯口岸、图开沙漠、天鹅泉、安集海大峡谷； 功能主治：看多了风花雪月，拍遍了大漠春秋，以为人间再无可拍之景的； 可能引起的后果：此路线极具季节性，在规定时间内完成的客人会终生爱上这个冬天； 广告语：梵高式的色彩、雪舞精灵白天鹅、异域风情中哈口岸、图开沙漠的冰雪奇缘； 额外功能：赛湖入住牛气哄哄的暖气房，推门看湖，关门见山；品名：赛湖、天鹅泉、大峡谷、沙漠、口岸8日； 保质期：2016.12.18-2016.4.8；
+                            主要成分：赛里木湖、霍尔果斯口岸、图开沙漠、天鹅泉、安集海大峡谷； 功能主治：看多了风花雪月，拍遍了大漠春秋，以为人间再无可拍之景的； 可能引起的后果：此路线极具季节性，在规定时间内完成的客人会终生爱上这个冬天； 广告语：梵高式的色彩、雪舞精灵白天鹅、异域风情中哈口岸、图开沙漠的冰雪奇缘； 额外功能：赛湖入住牛气哄哄的暖气房，推门看湖，关门见山；品名：赛湖、天鹅泉、大峡谷、沙漠、口岸8日；
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--top-->
+            <div id="content_nav">
+                <ul>
+                    <li><a href="#show_anpai" class="active">行程安排</a></li>
+                    <li><a href="#show_shuo">费用说明</a></li>
+                    <li><a href="#show_tishi">温馨提示</a></li>
+                    <li><a href="#show_ditu">旅游地图</a></li>
+                    <li><a href="#show_dping">游客点评</a></li>
+                    <li><a href="#show_xihuan">猜您喜欢</a></li>
+                </ul>
+                <a href="javascript:;">加入购物车<i class="glyphicon glyphicon-shopping-cart"></i></a>
+                <a href="javascript:;">打印行程<i class="glyphicon glyphicon-print"></i></a>
+            </div>
+
+            <div class="content_show_box" id="show_anpai">
+                <h2 class="title">行程安排</h2>
+                <div class="show_days">
+                    <div class="show_day">
+                        <div class="show_day_title">
+                            <span>D1</span>乌市【汽车】赛里木湖（500公里 6小时）
+                        </div>
+                        <div class="show_day_con show_day_jd">
+                            <span></span>
+                            <div class="show_day_content">
+                                <h2>途经景点</h2>
+                                <p>赛里木湖</p>
+                            </div>
+                        </div>
+                        <div class="show_day_con show_day_zs">
+                            <span></span>
+                            <div class="show_day_content">
+                                <h2>住宿安排</h2>
+                                <p>赛里木湖毡房</p>
+                            </div>
+                        </div>
+                        <div class="show_day_con show_day_chs">
+                            <span></span>
+                            <div class="show_day_content">
+                                <h2>餐食情况</h2>
+                                <p>
+                                    早餐：敬请自理； 午餐：敬请自理； 晚餐：敬请自理； </p>
+                            </div>
+                        </div>
+                        <div class="show_day_con show_day_xc">
+                            <span></span>
+                            <div class="show_day_content show_day_content_detaile">
+                                <h2>行程安排</h2>
+                                <p>
+                                    早餐后赴有世外之灵壤之称的高山明珠——【赛里木湖】，乘区间车进入赛里木湖海西草原拍摄，赛里木湖（哈萨克语：幸福之湖）。赛里木湖面海拔2073米，水域面积458平方公里是新疆海拔最高、面积最大的高山湖泊。湖水明净、湛蓝、湖面宽广,天水相映，湖周雪山环抱、云山相连。湖水、草原、森林、白云、雾霭、雪山、奇峰......组成了一幅幅绝美的风景画卷。<br> 行程亮点：雪山、草坡、湖泊、天鹅、牛羊，可以在水边打水漂哦
+                                </p>
+                            </div>
+                        </div>
+                        <div class="show_day_img">
+                            <img title="赛里木湖" src="http://www.tstrip.cn/thumb/uploads/attraction/2014-04-11/53475a080a0a7/325_200.jpg">
+                        </div>
+                    </div>
+
+                    <div class="show_day">
+                        <div class="show_day_title">
+                            <span>D2</span>赛湖【汽车】乌尔禾（350公里 4小时)
+                        </div>
+                        <div class="show_day_con show_day_jd">
+                            <span></span>
+                            <div class="show_day_content">
+                                <h2>途经景点</h2>
+                                <p>乌尔禾魔鬼城</p>
+                            </div>
+                        </div>
+                        <div class="show_day_con show_day_zs">
+                            <span></span>
+                            <div class="show_day_content">
+                                <h2>住宿安排</h2>
+                                <p>乌尔禾</p>
+                            </div>
+                        </div>
+                        <div class="show_day_con show_day_chs">
+                            <span></span>
+                            <div class="show_day_content">
+                                <h2>餐食情况</h2>
+                                <p>
+                                    早餐：敬请自理； 午餐：敬请自理； 晚餐：敬请自理； </p>
+                            </div>
+                        </div>
+                        <div class="show_day_con show_day_xc">
+                            <span></span>
+                            <div class="show_day_content show_day_content_detaile">
+                                <h2>行程安排</h2>
+                                <p>
+                                    早乘车经枸杞之乡-精河，途中可看见渥巴锡敖包，又称精河敖包。晚抵达乌尔禾。<br> 景点介绍：荣获“世界上最值得去的五十个地方之一”的【乌尔禾魔鬼城】，景区内地表沟壑纵横，岩层千姿百态，属于典型雅丹地貌，是世界著名的两大雅丹地貌之一。因该地处于风口，四季多风，每当大风到来，黄沙漫天，故称“风城”。又因大风在群岩间激荡回旋、凄厉呼啸，如同鬼哭狼嚎，令人毛骨悚然、惊恐万状，继而成为奇观美谈，故又得名“魔鬼城”。
+                                    <br> 行程亮点：敖包、戈壁、百里油田、魔鬼城、雅丹地貌
+                                </p>
+                            </div>
+                        </div>
+                        <div class="show_day_img">
+                            <img title="乌尔禾魔鬼城" src="http://www.tstrip.cn/thumb/uploads/attraction/2014-03-13/53216359aa1e3/325_200.jpg">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content_show_box" id="show_shuo">
+                <h2 class="title">费用说明</h2>
+                <div class="show_shuo_con">
+                    <h3>费用包含</h3>
+                    <p class="show_shuo_p">
+                        1、交通：全程用车旅游空调车，保证每人一座；<br> 2、住宿：全程9晚酒店标准间住宿（禾木、白哈巴为特色木屋）；
+                        <br> 3、用餐：见行程所列；
+                        <br> 4、门票：行程中赛湖、魔鬼城、白沙湖、喀纳斯、白哈巴、禾木、可可托海、胡杨林门票及区间车（行程以外景点不含）；
+                        <br> 5、导游：提供全程优秀持证导游讲解服务；（10人以下司机兼向导）
+                        <br> 6、保险：含旅行社责任保险；
+                    </p>
+                    <h3>费用不包含</h3>
+                    <p>
+                        1、景区内娱乐项目（如骑马、漂流、观看民族特色歌舞等）；<br> 2、全程住宿单房差（如产生房差，客人现补）；
+                        <br> 3、用餐自理；
+                        <br> 4、费用报含之外得费用自理；
+                    </p>
+                </div>
+            </div>
+            <div class="content_show_box" id="show_tishi">
+                <h2 class="title">温馨提示</h2>
+                <div class="show_shuo_con">
+                    1、新疆有2小时时差，作息时间应推后2小时，进疆后一定要把作息时间调整过来。在新疆旅游，均以北京时间为准，请自我调整。<br> 2、如果您持有各种门票优惠证件，在您参团后我们会根据景区的相关优惠政策给予退费。
+                    <br> 3、新疆旅游较内地落后，车、房、导游、餐等均不如内地，尤其是宾馆酒店比内地低一档次，如新疆的三星相当与内地的二星，在旅游高峰期价格却比内地高一档次的宾馆高。
+                    <br> 4、新疆是少数民族地区，大部分民族信仰伊斯兰教，请尊重民族同志的信仰习惯，避免谈论有关“猪”的话题，以防引起不快。
+                    <br> 5、夏季7-9月份，已经上市的葡萄、哈密瓜、西瓜、石榴、苹果、蟠桃、香梨、杏子可令您大饱口福。 <br> 6、在新疆购物，当地人是按公斤计价，买东西之前请先换算好。新疆民族工艺品中的小刀，民航和铁路部门均不准托运，请大家注意。
+                    <br> 7、请务必随身携带并保管好身份证。
+                    <br> 8、旅游景区紫外线较强，建议出门前戴帽子或防晒霜，新疆山区多，早晚温差大，建议携带御寒衣物和平底鞋.游客参加需根据健康情况量力而行，旅途中因自身疾病带来的伤害，由游客自行承担责任。
+                    <br> 9、在不减少景点和服务标准的前提下，旅行社可根据天气情况、游客流量、交通便利等因素对日程安排做先后调整。
+                    <br> 10、因自身原因放弃游览，用餐、住宿、门票、车费等费用不予退还。
+                    <br> 11、投诉处理主要以《游客意见反馈单》为准，请游客真实负责填写。恕不受理因虚填或不填《游客意见反馈单》而出现的投诉。
+                    <br> 行前解约说明:
+                    <br> 旅游者在行程开始前7日以上提出解约合同的，应当承担实际发生的费用：
+                    <br> 旅游者在行程前开始前7日以内提出解除合同或旅行社按《旅游法》第六十六条解除合同的，旅行社按以下标准扣除必要的费用后将余款退还旅游者：
+                    <br> 行程开始前6日至4日，按旅游费用总额的20%；
+                    <br> 行程开始前3日至1日，按旅游费用总额的40%；
+                    <br> 当上述必要的费用低于实际发生的费用时，按实际发生的费用扣除，最高不超过旅游费用总额。
+                </div>
+            </div>
+            <div class="content_show_box" id="show_ditu" style="height: 300px;">
+                <h2 class="title">旅游地图</h2>
+            </div>
+            <div class="content_show_box" id="show_dping" style="height: 300px;">
+                <h2 class="title">游客点评</h2>
+            </div>
+            <div class="content_show_box" id="show_xihuan">
+                <h2 class="title">猜您喜欢</h2>
+                <div class="show_box_xihuan">
+                    <ul class="row">
+                        <li class="col-md-3">
+                            <a href="#" target="_blank">
+                                <img src="images/img1.jpg" alt="">
+                            </a>
+                            <div class="info">
+                                <a href="#" target="_blank" class="title">
+                                    四星环游：可可托海、喀纳斯、禾木村、白桦林、五彩滩、胡杨林环游6日
+                                </a>
+                                <p>
+                                    <span>￥3389<i>起</i></span>
+                                    <a href="http://www.tstrip.cn/tour/1076" target="_blank" class="view">查看</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#" target="_blank">
+                                <img src="images/img2.jpg" alt="">
+                            </a>
+                            <div class="info">
+                                <a href="#" target="_blank" class="title">
+                                    四星环游：可可托海、喀纳斯、禾木村、白桦林、五彩滩、胡杨林环游6日
+                                </a>
+                                <p>
+                                    <span>￥3389<i>起</i></span>
+                                    <a href="http://www.tstrip.cn/tour/1076" target="_blank" class="view">查看</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#" target="_blank">
+                                <img src="images/img3.jpg" alt="">
+                            </a>
+                            <div class="info">
+                                <a href="#" target="_blank" class="title">
+                                    四星环游：可可托海、喀纳斯、禾木村、白桦林、五彩滩、胡杨林环游6日
+                                </a>
+                                <p>
+                                    <span>￥3389<i>起</i></span>
+                                    <a href="http://www.tstrip.cn/tour/1076" target="_blank" class="view">查看</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="col-md-3">
+                            <a href="#" target="_blank">
+                                <img src="images/img4.jpg" alt="">
+                            </a>
+                            <div class="info">
+                                <a href="#" target="_blank" class="title">
+                                    四星环游：可可托海、喀纳斯、禾木村、白桦林、五彩滩、胡杨林环游6日
+                                </a>
+                                <p>
+                                    <span>￥3389<i>起</i></span>
+                                    <a href="http://www.tstrip.cn/tour/1076" target="_blank" class="view">查看</a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="content">
+            <div class="site_link">
+                <h3>-友情链接-</h3>
+                <div class="site_link_con">
+                    <a href="javascript:; " target="_blank"><img src="images/link.png" /></a>
+                    <a href="javascript:; " target="_blank"><img src="images/link.png" /></a>
+                    <a href="javascript:; " target="_blank"><img src="images/link.png" /></a>
+                    <a href="javascript:; " target="_blank"><img src="images/link.png" /></a>
+                    <a href="javascript:; " target="_blank"><img src="images/link.png" /></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="logo">
+                    <a href="javascript:;"><img src="images/logo.png" /></a>
+                </div>
+                <div class="copyright_con">
+                    <p>Copyright©2006-2015 www.xinjiangtour.com | All rights reserved 新ICP备13003149号-1<span>联系电话：0991-12345678</span></p>
+                    <p>新疆中国国际旅行社有限责任公司<span>地址：中国新疆乌鲁木齐市人民东路33号</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lib/jquery/jquery-2.1.4.min.js"></script>
+    <script src="lib/My97DatePicker/WdatePicker.js " type="text/javascript " charset="utf-8"></script>
+    <script src="js/jquery.SuperSlide.2.1.js " type="text/javascript " charset="utf-8"></script>
+    <script src="js/scrollfix-1.4.js " type="text/javascript " charset="utf-8"></script>
+    <script src="js/basic.js " type="text/javascript " charset="utf-8"></script>
+</body>
+
+</html>

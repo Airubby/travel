@@ -24,37 +24,6 @@
         });
     }
 
-    function anchorGoWhere(nav, yangshi, sudu, toubu) {
-        var a = nav + " a";
-        var scrollTop = null;
-        var firstA = $(a).get(0);
-        var firstIDtop = $($(firstA).attr("href")).offset().top;
-        $(a).click(function() {
-            thisID = $(this).attr("href");
-            $("html,body").animate({ scrollTop: $(thisID).offset().top - toubu }, sudu);
-            return false;
-        });
-        $(window).scroll(function() {
-            scrollTop = $(this).scrollTop();
-            $(a).each(function(index) {
-                //scrollGoWhere(index, this);
-                if (scrollTop < firstIDtop) {
-                    $(firstA).addClass(yangshi);
-                } else {
-                    var thisID = $(this).attr("href");
-                    var thisIDtop = $(thisID).offset().top;
-                    var value = scrollTop - thisIDtop;
-                    if (-toubu <= value && value < $(thisID).height()) {
-                        $(a).each(function() {
-                            $(this).removeClass(yangshi);
-                        });
-                        $(this).addClass(yangshi);
-                    }
-                }
-            });
-        });
-
-    }
     anchorGoWhere("#right_nav", "active", 500, 130);
 
 

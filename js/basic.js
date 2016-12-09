@@ -46,6 +46,41 @@
     //私人管家
     var guanjia_img = body_height - header_height;
     $(".guanjia_img img").css("height", guanjia_img);
+    //内容页
+    $("#content_nav").scrollFix();
+    anchorGoWhere("#content_nav", "active", 500, 40);
+    // 锚点跳转
+    function anchorGoWhere(nav, yangshi, sudu, toubu) {
+        var thisA = nav + " a";
+        var scrollTop = null;
+        var firstA = $(thisA).get(0);
+        var firstIDtop = $($(firstA).attr("href")).offset().top;
+        $(thisA).click(function() {
+            thisID = $(this).attr("href");
+            $("html,body").animate({ scrollTop: $(thisID).offset().top - toubu }, sudu);
+            return false;
+        });
+        $(window).scroll(function() {
+            scrollTop = $(this).scrollTop();
+            $(thisA).each(function(index) {
+                if (scrollTop < firstIDtop) {
+                    $(firstA).addClass(yangshi);
+                } else {
+                    var thisID = $(this).attr("href");
+                    var thisIDtop = $(thisID).offset().top;
+                    var value = scrollTop - thisIDtop;
+                    if (-toubu <= value && value < $(thisID).height()) {
+                        $(thisA).each(function() {
+                            $(this).removeClass(yangshi);
+                        });
+                        $(this).addClass(yangshi);
+                    }
+                }
+            });
+        });
+
+    }
+
 
 
 
