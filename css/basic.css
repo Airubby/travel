@@ -1,12 +1,12 @@
 @charset "utf-8";
 body {
-    color: #777;
+    color: #666;
     font-family: "Helvetica Neue", "Open Sans", "Microsoft YaHei", "微软雅黑", "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
 
 a,
 a:hover {
-    color: #777;
+    color: #666;
     text-decoration: none;
 }
 
@@ -116,9 +116,10 @@ img {
     font-weight: bold;
 }
 
-#header .search {
+#search {
     float: right;
-    min-width: 300px;
+    min-width: 278px;
+    padding-left: 16px;
     height: 30px;
     border: 1px solid #ccc;
     margin-top: 20px;
@@ -129,80 +130,14 @@ img {
     transition: width ease 0.3s;
 }
 
-#header .search_left {
-    width: 88px;
-    padding-left: 12px;
-    float: left;
-    font-size: 12px;
-    position: relative;
-}
-
-#header .search_left:hover .search_text_list {
-    display: block;
-}
-
-#header .search_left:hover+.search_input .search_tuijian {
-    display: none;
-}
-
-#header .search_text {
-    width: 100%;
-    display: block;
-    height: 28px;
-    line-height: 28px;
-    cursor: pointer;
-}
-
-#header .search_text .caret {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
-#header .search_left:hover .search_text .caret {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-
-#header .search_text span {
-    display: inline-block;
-    width: 55px;
-    text-align: center;
-}
-
-#header .search_text_list {
-    position: absolute;
-    z-index: 99;
-    width: 75px;
-    padding: 10px;
-    text-align: center;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-top-color: #fff;
-    display: none;
-}
-
-#header .search_text_list li {
-    line-height: 30px;
-    cursor: pointer;
-}
-
-#header .search_text_list li:hover {
-    color: #00abd6;
-}
-
-#header .search_input {
+#search .search_input {
     float: left;
     width: auto;
     padding-right: 40px;
     position: relative;
 }
 
-#header .search_input button {
+#search .search_input button {
     float: right;
     width: auto;
     border: none;
@@ -212,10 +147,9 @@ img {
     top: 0;
 }
 
-#header .search_input input {
-    width: 175px;
-    line-height: 25px;
-    padding-left: 5px;
+#search .search_input input {
+    width: 220px;
+    line-height: 28px;
     border: none;
     outline: none;
     -webkit-transition: all 0.5s ease-in-out;
@@ -224,16 +158,16 @@ img {
     transition: all 0.5s ease-in-out;
 }
 
-#header .search_input button i {
+#search .search_input button i {
     font-size: 20px;
     margin-top: 2px;
     color: #00abd6;
 }
 
-#header .search_tuijian {
+#search .search_tuijian {
     position: absolute;
     top: 40px;
-    left: -80px;
+    left: -10px;
     z-index: 99;
     width: 365px;
     padding: 15px;
@@ -244,19 +178,19 @@ img {
     display: none;
 }
 
-#header .search_tuijian h2 {
+#search .search_tuijian h2 {
     color: #f60;
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-#header .search_tuijian a {
+#search .search_tuijian a {
     margin: 0 10px 0 0;
     display: inline-block;
     font-size: 12px;
 }
 
-#header .search_tuijian:before {
+#search .search_tuijian:before {
     content: "";
     position: absolute;
     left: 90px;
@@ -267,7 +201,7 @@ img {
     border-top: 0 dotted;
 }
 
-#header .search_tuijian:after {
+#search .search_tuijian:after {
     content: "";
     position: absolute;
     left: 90px;
@@ -278,11 +212,11 @@ img {
     border-top: 0 dotted;
 }
 
-#header .search_input input:focus {
-    width: 250px;
+#search .search_input input:focus {
+    width: 320px;
 }
 
-#header .search_input input:focus+button+.search_tuijian {
+#search .search_input input:focus+button+.search_tuijian {
     display: block;
 }
 

@@ -21,9 +21,28 @@
         returnDefault: true
     });
     /*首页效果*/
+    jQuery(".index_ibox_slide").slide({ mainCell: ".bd", effect: "fold", trigger: "click" });
+
+    function slide() {
+        var slide_index = $('#slide_bd').children().length;
+        var slide_width = (24 * slide_index) / 2;
+        for (var i = 0; i < slide_index; i++) {
+            if (i == 0) {
+                $('#slide_hd').append("<li class='on'></li>");
+            } else {
+                $('#slide_hd').append('<li></li>');
+            }
+        }
+        $('.index_slide .hd').css({
+            "margin-left": -(slide_width)
+        });
+    }
+    slide();
     jQuery(".index_slide").slide({ mainCell: ".bd ul", autoPlay: true, effect: "fold" });
     jQuery(".slideBox_dz").slide({ mainCell: ".bd ul", effect: "leftLoop" });
     jQuery(".picScroll-left").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "leftLoop", vis: 3, easing: "easeInQuint" });
+
+
     /*列表页*/
     var list_dl = 896 - $(".list_dl dd:nth-of-type(1)").outerWidth() - $(".list_dl dd:nth-of-type(2)").outerWidth();
     $(".list_dl dd:nth-of-type(3)").outerWidth(list_dl);
