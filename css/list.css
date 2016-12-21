@@ -524,7 +524,7 @@
 
 .list_addres {
     padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ccc;
     margin-bottom: 15px;
 }
 
@@ -568,4 +568,50 @@
     color: #ff6a20;
     font-style: normal;
     margin: 0 5px;
+}
+
+
+/*购物车*/
+
+.gouwuche_cen {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.gouwuche_cen li {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 20px;
+}
+
+.gouwuche_cen .img img {
+    height: 100px;
+}
+
+.gouwuche_cen .text a {
+    height: 50px;
+    line-height: 25px;
+    font-size: 16px;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.gouwuche_cen .text span {
+    margin-right: 35px;
+    line-height: 30px;
+}
+
+.gouwuche_cen .text span i {
+    color: #f60;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.gouwuche_cen .textbtn {
+    text-align: center;
+}
+
+.gouwuche_cen .textbtn a {
+    margin-top: 15px;
 }

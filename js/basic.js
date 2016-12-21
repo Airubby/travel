@@ -11,7 +11,7 @@
             //console.log($($(".search_data").get(0)).data("search"))
         }
     }
-    //导航 
+    //导航 侧边导航
     $("#nav_pop_wrapper").slide({
         titCell: ".mod_cate",
         targetCell: ".mod_subcate",
@@ -19,6 +19,22 @@
         triggerTime: 10,
         defaultPlay: false,
         returnDefault: true
+    });
+    $("#side_edge_tab .gotoTop").on("click", function() {
+        $("html,body").animate({
+            scrollTop: 0
+        }, 500);
+    });
+    var edge_tab = true;
+    $("#side_edge_tab .side_edge_tab").click(function() {
+        $("#side_edge_con").toggle();
+        if (edge_tab) {
+            $("#side_edge_tab .side_edge_tab i").addClass("tabi_active");
+            edge_tab = false;
+        } else {
+            $("#side_edge_tab .side_edge_tab i").removeClass("tabi_active");
+            edge_tab = true;
+        }
     });
     /*首页效果*/
     jQuery(".index_ibox_slide").slide({ mainCell: ".bd", effect: "fold", trigger: "click" });

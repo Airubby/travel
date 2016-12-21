@@ -614,3 +614,152 @@ img {
 .min_phone span {
     color: #f60;
 }
+
+
+/*侧边*/
+
+#side_edge {
+    width: 35px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99999;
+}
+
+#side_edge_con {
+    height: 100%;
+    background: #000;
+}
+
+#side_edge .side_edge_cart {
+    display: block;
+    padding: 35px 0;
+    text-align: center;
+    border-bottom: 1px solid #717171;
+    border-top: 1px solid #717171;
+    background: #f50;
+}
+
+#side_edge .side_edge_cart .cart_num {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    line-height: 19px;
+    color: #f50;
+    border-radius: 50%;
+    text-align: center;
+    background: rgba(255, 255, 255, .9);
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#side_edge i {
+    display: inline-block;
+    background: url(../images/icon.png) no-repeat;
+}
+
+#side_edge .side_edge_cart i.carti {
+    width: 19px;
+    height: 16px;
+    background-position: 0 -123px;
+}
+
+#side_edge .side_edge_cart .word {
+    display: inline-block;
+    width: 19px;
+    margin-top: 2px;
+    font-size: 14px;
+    color: #fff;
+}
+
+#side_edge .side_edge_cord {
+    position: relative;
+    height: 50px;
+}
+
+#side_edge .side_edge_cord_bg {
+    width: 50px;
+    height: 48px;
+    padding: 7px 8px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    background: url(../images/icon.png) no-repeat -40px -48px;
+}
+
+#side_edge .cord_img {
+    width: 34px;
+    height: 34px;
+    display: block;
+    background: url(../images/def_state.gif) no-repeat;
+}
+
+#side_edge .side_edge_cord_bg:hover .cord_img {
+    background: url(../images/notify_state.gif) no-repeat;
+}
+
+#side_edge .side_edge_box {
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+}
+
+#side_edge i.contrasti {
+    width: 18px;
+    height: 18px;
+    background-position: -19px -122px;
+}
+
+#side_edge i.teli {
+    width: 18px;
+    height: 20px;
+    background-position: -37px -122px;
+}
+
+#side_edge i.qqi {
+    width: 18px;
+    height: 20px;
+    background-position: -55px -122px;
+}
+
+#side_edge .word-contrast {
+    color: #fff;
+    margin-top: 1px;
+}
+
+#side_edge_tab {
+    position: absolute;
+    left: 0;
+    width: 35px;
+    background: #000;
+    bottom: 0;
+}
+
+#side_edge i.gotopi {
+    width: 17px;
+    height: 18px;
+    background-position: -110px -122px;
+}
+
+#side_edge_tab .side_edge_box {
+    margin-top: 7px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #717171;
+}
+
+#side_edge i.tabi {
+    width: 18px;
+    height: 18px;
+    background-position: -127px -122px;
+}
+
+#side_edge i.tabi_active {
+    background-position: -145px -122px;
+}
+
+#side_edge a {
+    width: 100%;
+    display: block;
+}
