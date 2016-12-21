@@ -22,6 +22,27 @@
     });
     /*首页效果*/
     jQuery(".index_ibox_slide").slide({ mainCell: ".bd", effect: "fold", trigger: "click" });
+    var scrollHeight = $("#slide").height() - 70;
+    $(window).scroll(function(event) {
+        var top = $(window).scrollTop();
+        if (top > scrollHeight) {
+            $("#index_header").css({
+                'background': '#fff',
+                'border-bottom': '1px solid #c4c4c3'
+            });
+            $("#index_header a").css("color", "#000");
+            $("#index_header #index_nav_right").css("display", "none");
+            $("#index_header #search").css("display", "block");
+        } else {
+            $("#index_header").css({
+                'background': 'none',
+                'border-bottom': 'none'
+            });
+            $("#index_header a").css("color", "#fff");
+            $("#index_header #index_nav_right").css("display", "block");
+            $("#index_header #search").css("display", "none");
+        }
+    });
 
     function slide() {
         var slide_index = $('#slide_bd').children().length;

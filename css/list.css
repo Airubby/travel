@@ -1,6 +1,5 @@
 @charset "utf-8";
 .section {
-    padding-top: 20px;
     margin-bottom: 30px;
     float: left;
     width: 100%;
@@ -521,4 +520,52 @@
 
 .selected_con_list:nth-last-of-type(1) {
     border: none;
+}
+
+.list_addres {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.list_addres a {
+    margin: 0 5px;
+}
+
+.list_addres i {
+    color: #999;
+    margin-right: 5px;
+}
+
+.miaosha_top {
+    padding: 20px 25px;
+    line-height: 37px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.miaosha_top img {
+    width: 36px;
+    height: 36px;
+}
+
+.miaosha_top span {
+    margin-right: 15px;
+    float: left;
+}
+
+.miaosha_top span:nth-of-type(2) {
+    color: #ff6a20;
+    font-size: 24px;
+}
+
+.miaosha_top span:nth-of-type(3) {
+    font-size: 18px;
+}
+
+.miaosha_top span i {
+    color: #ff6a20;
+    font-style: normal;
+    margin: 0 5px;
 }
