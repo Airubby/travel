@@ -82,7 +82,7 @@
     height: 24px;
     display: block;
     position: absolute;
-    top: 18px;
+    top: 20px;
     left: 18px;
     background: url(../images/icon.png) no-repeat;
 }
@@ -1308,4 +1308,34 @@
     border-radius: 3px;
     float: right;
     font-size: 12px;
+}
+
+.dingzhi_con em.glyphicon {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 18px;
+    color: #00abd6;
+}
+
+.renzheng li>div>strong {
+    width: 120px;
+}
+
+.renzheng li>div>.file {
+    padding-top: 15px;
+    height: 60px;
+}
+
+.zhongxin_right_conbox h2 span {
+    padding-left: 40px;
+    color: #f60;
+}
+
+.zhongxin_right_conbox h2 span i {
+    padding-left: 5px;
 }
