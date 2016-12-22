@@ -36,6 +36,30 @@
             edge_tab = true;
         }
     });
+
+    $("#side_edge .side_edge_box").each(function(index) {
+        var _this = $(this).find(".edge_reminder").get(0);
+        $(this).hover(function() {
+            $(_this).css({
+                'display': 'block',
+                'opacity': 1,
+                'right': '35px'
+            });
+        }, function() {
+            $(_this).css({
+                'display': 'none',
+                'opacity': 0,
+                'right': '60px'
+            });
+
+        });
+
+    });
+    $("#edge_reminder_addA").click(function() {
+        $("#edge_reminder_add").toggle();
+    });
+
+
     /*首页效果*/
     jQuery(".index_ibox_slide").slide({ mainCell: ".bd", effect: "fold", trigger: "click" });
     var scrollHeight = $("#slide").height() - 70;

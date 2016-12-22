@@ -763,3 +763,164 @@ img {
     width: 100%;
     display: block;
 }
+
+#side_edge .side_edge_box .edge_reminder {
+    position: absolute;
+    background: #fff;
+    right: 60px;
+    top: -5px;
+    line-height: 30px;
+    color: #000;
+    min-width: 80px;
+    min-height: 30px;
+    display: block;
+    opacity: 0;
+}
+
+#side_edge .edge_reminder:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: -7px;
+    top: 7px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #fff;
+}
+
+#side_edge .side_edge_boxt .edge_reminder {
+    min-width: 180px;
+    padding: 15px 0;
+}
+
+#side_edge .side_edge_boxt .edge_reminder h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#side_edge .side_edge_box:hover .edge_reminder {
+    -webkit-animation: edgemove 0.4s ease-in-out;
+    animation: edgemove 0.4s ease-in-out;
+}
+
+@-webkit-keyframes edgemove {
+    0% {
+        display: none;
+        opacity: 0;
+        right: 60px;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+        right: 35px;
+    }
+}
+
+@keyframes edgemove {
+    0% {
+        display: none;
+        opacity: 0;
+        right: 60px;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+        right: 35px;
+    }
+}
+
+#side_edge_con .edge_reminder_add {
+    position: absolute;
+    background: #fff;
+    top: -5px;
+    right: 35px;
+    border: 1px solid #2aa3ce;
+    width: 250px;
+    min-height: 100px;
+    z-index: 9999;
+    display: none;
+}
+
+#side_edge_con .form-group {
+    height: 35px;
+    line-height: 35px;
+    margin: 10px 0 10px 15px;
+}
+
+#side_edge_con .input-group,
+#side_edge_con .btn {
+    float: left;
+}
+
+#side_edge_con .edge_reminder_add_bottom {
+    padding: 10px 15px;
+    border-top: 1px solid #ddd;
+    overflow: hidden;
+}
+
+#side_edge_con .edge_reminder_add_bottom a {
+    display: block;
+    width: auto;
+}
+
+#side_edge_con .edge_reminder_add_bottom a.start {
+    border-radius: 4px;
+    background-color: #2ba2cd;
+    color: #fff;
+    padding: 3px 12px;
+    float: left;
+}
+
+#side_edge_con .edge_reminder_add_bottom a.empty {
+    color: #2ba1cd;
+    padding: 3px 0;
+    margin-right: 5px;
+    float: right;
+}
+
+#side_edge_con .add_list_box {
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+}
+
+#side_edge_con .add_list_box div {
+    height: 60px;
+    padding: 10px;
+}
+
+#side_edge_con .add_list_box div:nth-of-type(2) {
+    padding: 10px 0;
+    border-left: 1px solid #ddd;
+    text-align: center;
+}
+
+#side_edge_con .add_list_box div:nth-of-type(1) a {
+    height: 20px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 3px;
+}
+
+#side_edge_con .add_list_box div:nth-of-type(1) strong {
+    color: #f60;
+}
+
+#side_edge_con .add_list_box div:nth-of-type(1) strong em {
+    font-style: normal;
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    margin-left: 3px;
+}
+
+#side_edge_con .add_list_box div:nth-of-type(2) a {
+    height: 100%;
+    display: block;
+    color: #999;
+    line-height: 40px;
+}
