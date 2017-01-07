@@ -127,8 +127,12 @@
     var guanjia_img = body_height - header_height;
     $(".guanjia_img img").css("height", guanjia_img);
     //内容页
-    $("#content_nav").scrollFix();
-    anchorGoWhere("#content_nav", "active", 500, 40);
+    if ($("#content_nav").length > 0) {
+        $("#content_nav").scrollFix();
+        anchorGoWhere("#content_nav_a", "active", 500, 40);
+        jQuery(".txtScroll-top").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "topLoop", autoPlay: true, easing: "easeInQuint" });
+    }
+
     // 锚点跳转
     function anchorGoWhere(nav, yangshi, sudu, toubu) {
         var thisA = nav + " a";
@@ -160,8 +164,6 @@
         });
 
     }
-
-
 
 
 })();

@@ -24,7 +24,10 @@
         });
     }
 
-    anchorGoWhere("#right_nav", "active", 500, 130);
+    if ($("#right_nav").length > 0) {
+        anchorGoWhere("#right_nav", "active", 500, 130);
+    }
+
 
 
 })();
