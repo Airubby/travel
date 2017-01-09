@@ -1,3 +1,4 @@
+ "use strict"
  // 锚点跳转
  function anchorGoWhere(nav, yangshi, sudu, toubu) {
      var thisA = nav + " a";
@@ -164,7 +165,7 @@
          jQuery(".txtScroll-top").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "topLoop", autoPlay: true, easing: "easeInQuint" });
      }
 
-     //购物车
+     //购物车,比价
      var eleFlyElement = document.querySelector("#flyItem"),
          eleShopCart = document.querySelector("#shopCart");
      var numberItem = 0;
@@ -194,6 +195,26 @@
              });
          });
      }
+     // 比价
+     $("#edge_reminder_add").find(".empty").on("click", function() {
+         $("#edge_reminder_add .edge_reminder_add_list").html('');
+     });
+     var edge_reminder_add_list = jQuery.trim($("#edge_reminder_add .edge_reminder_add_list").html());
+     if (edge_reminder_add_list.length != 0) {
+         $("#edge_reminder_add").find(".glyphicon-remove").on("click", function() {
+             $(this).closest('.add_list_box').remove();
+         });
+     }
+
+
+
+
+
+
+
+
+
+
 
 
 

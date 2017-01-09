@@ -808,6 +808,11 @@
     border-left: 1px solid #eee;
 }
 
+.bijia_box2 strong {
+    margin: 0 5px;
+    font-weight: normal;
+}
+
 .bijia_box2_title {
     height: 130px;
 }
