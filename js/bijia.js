@@ -17,8 +17,9 @@
         });
     }
 
-
-    anchorGoWhere("#right_nav", "active", 500, 130);
+    if ($("#right_nav").length > 0) {
+        anchorGoWhere("#right_nav", "active", 500, 130);
+    }
 
 
     $(".bijia_box2_title").each(function(item, obj) {

@@ -68,6 +68,12 @@
     position: relative;
 }
 
+.dingzhi_con li div a {
+    float: right;
+}
+.dingzhi_con li div a:hover{
+    color: #00abd6;
+}
 .dingzhi_con li:nth-last-of-type(1) {
     height: auto;
 }
@@ -212,6 +218,7 @@
 
 .dingzhi_con li .label_select label {
     font-weight: normal;
+    min-width: 130px;
 }
 
 .dingzhi_con li .label_select ul {
@@ -241,10 +248,21 @@
     background: #00abd6;
 }
 
-.dingzhi_con li .select_date {
+.dingzhi_con li div.label_select_showhiden {
     padding-left: 20px;
     margin-left: 20px;
+    margin-top: 15px;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    background: none;
     border-left: 1px solid #ccc;
+}
+
+.dingzhi_con li .select_date {
+    border: none;
+    background: none;
+    outline: none;
 }
 
 .dingzhi_con li .label_select .caret {
@@ -1372,4 +1390,100 @@
 
 .zhongxin_right_conbox h2 span i {
     padding-left: 5px;
+}
+
+/*打款账号*/
+.zhanghao_content{
+    padding-top: 20px;
+}
+.zhanghao_con{
+    width: 962px;
+    margin: 20px auto;
+    font-size: 14px;
+}
+.zhanghao_con .img img{
+    width: auto;
+}
+.zhanghao_con dt{
+    font-weight: normal;
+}
+.zhanghao_con dd{
+    margin: 5px 0;
+    line-height: 24px;
+}
+.zhanghao_con dd.img {
+    margin: 20px 0;
+}
+.zhanghao_con dd a.top {
+    width: 130px;
+    height: 36px;
+    display: inline-block;
+    margin: 20px 0 40px 0;
+    background: url(../images/About_ui.png) no-repeat 0 -224px;
+}
+.zhanghao_con .ptitle {
+    font-size: 16px;
+    font-family: "微软雅黑";
+}
+.all-con-box {
+    width: 960px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.all-con-box dl {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+.all-con-box dd {
+    float: left;
+    display: block;
+    margin: 0;
+}
+.all-con-box dd.w275 {
+    width: 275px;
+    text-align: center;
+}
+.all-con-box dd.w458 {
+    width: 458px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.all-con-box dd.w225 {
+    width: 225px;
+    text-align: center;
+}
+.all-con-box img{
+    width: auto;
+    margin-top: 33px;
+}
+.all-con-box dd p {
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.zhanghao_con .orange {
+    color: #f60;
+    font-size: 15px;
+}
+ .all-con-box a {
+    width: 120px;
+    height: 36px;
+    display: inline-block;
+    background: url(../images/About_ui.png) no-repeat 0 -298px;
+}
+.all-con-box dd.w225 a {
+    margin-top: 48px;
+}
+.all-con-box dd.w225 a:hover {
+    background-position: 0 -335px;
+}
+.all-con-bottom {
+    font-size: 14px;
+    color: #999;
+    padding-top: 30px;
+}
+.all-con-bottom p{
+    margin-bottom: 10px;
+    line-height: 26px;
 }

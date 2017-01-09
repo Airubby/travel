@@ -1,7 +1,7 @@
 (function() {
 
     var thisDays = 0;
-    $("#baojia_bg").find("input:text").prop("readonly", "readonly");
+    $(".baojia_bg").find("input:text").prop("readonly", "readonly");
     $(".baojia_input").each(function() {
         var _this = this;
         $(this).find(".glyphicon-minus").on("click", function() {
@@ -84,7 +84,7 @@
         var che_list_num = 0;
         $(".baojia_che_list").find("input").each(function() {
             if ($(this).get(0).checked) {
-                jd_list_num++;
+                che_list_num++;
             }
         });
         if (che_list_num == 0) {
