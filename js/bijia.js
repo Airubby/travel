@@ -1,13 +1,6 @@
 (function() {
     $("#bijia_title").scrollFix();
     var bijia_box = $(".bijia_box");
-    // if (bijia_box.length > 0) {
-    //     for (var i = 0; i < bijia_box.length; i++) {
-    //         (function(n) {
-    //             thisHeight(n);
-    //         })(i);
-    //     }
-    // }
     $(bijia_box).each(function(index) {
         thisHeight(index);
     });
@@ -24,9 +17,10 @@
         });
     }
 
-    if ($("#right_nav").length > 0) {
-        anchorGoWhere("#right_nav", "active", 500, 130);
-    }
+
+    anchorGoWhere("#right_nav", "active", 500, 130);
+
+
 
 
 
