@@ -277,8 +277,8 @@
                     </div>
                 </div>
                 <div class="content_con_topbox">
-                    <div class="content_con_rili">
-                        日历信息
+                    <div class="content_con_rili" id="datePicker">
+                        日历信息，需要服务器下浏览
                     </div>
                     <div class="content_con_tuijian">
                         <h2>推荐理由</h2>
@@ -632,6 +632,15 @@
     <script src="js/bijia.js " type="text/javascript " charset="utf-8"></script>
     <script src="js/list.js " type="text/javascript " charset="utf-8"></script>
     <script src="js/baojia.js " type="text/javascript " charset="utf-8"></script>
+    <script src="js/datePicker.js"></script>
+    <script>
+        (function(){
+            $.get("/js/date.json", function (data) {
+				pickerEvent.setPriceArr(eval(data));
+				pickerEvent.Init("calendar_choose");
+			});
+        })();
+    </script>
 </body>
 
 </html>
